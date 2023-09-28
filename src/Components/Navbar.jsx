@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Navbar = () => {
+  
   return (
     <DIV>
       
@@ -11,6 +12,7 @@ export const Navbar = () => {
 
     </DIV>
   );
+
 };
 
 const DIV = styled.div`
