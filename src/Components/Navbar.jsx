@@ -7,6 +7,7 @@ export const Navbar = () => {
     <DIV>
       
       <Link to={"/"}>Home</Link>
+      <Link to={"/products"}>Product</Link>
 
     </DIV>
   );
