@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
-function Homepage() {
+export const Homepage = () => {
+ 
+   
   return (
-    <div>Homepage</div>
-  )
-}
-
-export default Homepage
+    <div>
+    <h1>Homepage</h1>
+    </div>
+  );
+};
