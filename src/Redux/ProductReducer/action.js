@@ -1,5 +1,5 @@
 import axios from "axios"
-import { PROD_FAILURE, PROD_RQUEST, PROD_SUCCESS } from "./actionTypes"
+import { PROD_FAILURE, PROD_RQUEST, PROD_SUCCESS, SINGLE_PROD_SUCCSS } from "./actionTypes"
 
 
 
@@ -15,4 +15,6 @@ axios.get(`https://dressify-mock-server-final.onrender.com/products`).then((res)
 })
 
 }
+
+
 

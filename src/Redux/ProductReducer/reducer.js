@@ -5,7 +5,6 @@ const initialState = {
     isLoading: false,
     isError: false,
     products: [],
-    singlProduct  : {},
     cart : []
 }
 
@@ -25,6 +24,8 @@ export const reducer = (state = initialState, {type, payload}) => {
             return { ...state, isLoading: false, isError: false, products: payload }
 
         }
+
+          
     
         default:
            return state
