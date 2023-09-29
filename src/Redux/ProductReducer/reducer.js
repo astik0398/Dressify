@@ -5,7 +5,7 @@ const initialState = {
     isLoading: false,
     isError: false,
     products: [],
-    singlProduct  : {}
+    cart : []
 }
 
 

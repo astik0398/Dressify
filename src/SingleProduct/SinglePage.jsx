@@ -1,9 +1,34 @@
 import React from 'react';
 import "./SinglePage.css"
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export const SinglePage = () => {
+
+
+    const prod = useSelector((store) => store.ProductReducer.products);
+    const [singleData, setsingleData] = useState({});
+  
+  
+    const { id } = useParams();
+  
+    useEffect(() => {
+      const prodata = prod.find((item) => item.id === +id)
+      console.log(prodata)
+      prodata && setsingleData(prodata)
+    }, []);
+  
+
+
+
+
   return (
     <div className='single-wrapper'>
+
+<h1> adil check single data{singleData.name}</h1>   
+
         <div className='image-wrapper'>
             <img className='image' src="https://cdn.shopify.com/s/files/1/1232/6200/products/17087_1.jpg" alt="" />
         </div>
