@@ -3,11 +3,11 @@ import { POST_PRODUCT_SUCCESS, PROD_FAILURE, PROD_RQUEST, PROD_SUCCESS } from ".
 
 
 
-export const getProData = (dispatch) => {
+export const getProData = (paramObj) =>  (dispatch) => {
 
     dispatch({type: PROD_RQUEST})
 
-axios.get(`https://dressify-mock-server-final.onrender.com/products`).then((res) => {
+axios.get(`https://dressify-server-project.onrender.com/products`, paramObj).then((res) => {
     //  console.log(res.data)
      dispatch({type : PROD_SUCCESS, payload : res.data})
 }).catch(() => {
