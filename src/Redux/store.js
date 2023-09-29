@@ -8,3 +8,7 @@ const rootReducer = combineReducers({
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(...middleware));
+
+
+//  api
+//   https://dressify-mock-server.onrender.com/products
