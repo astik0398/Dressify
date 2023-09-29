@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-columns: repeat(5 , 19%);
   gap: 10px;
   .img {
     position: relative;
@@ -61,6 +61,9 @@
       padding: 5px;
       strong{
         color: rgb(228, 126, 0);
+      }
+      .name{
+        width: calc(100% - 40px);
       }
     }
 
