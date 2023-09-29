@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import signuppic from '../Images/signuppic.png'
-import { useToast } from "@chakra-ui/react";
+// import signuppic from '../Images/signuppic.png'
+// import { useToast } from "@chakra-ui/react";
 
 const Signup = () => {
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const toast = useToast()
+  // const toast = useToast()
 
   const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
 
-  function errorToast(){
+  // function errorToast(){
 
-    toast({
-      title: 'Fill All The Details',
-      description: "Above input cannot be empty",
-      status: 'error',
-      duration: 2000,
-      isClosable: true,
-    })
-  }
+  //   toast({
+  //     title: 'Fill All The Details',
+  //     description: "Above input cannot be empty",
+  //     status: 'error',
+  //     duration: 2000,
+  //     isClosable: true,
+  //   })
+  // }
 
   function handleClick(){
     if(name=="" || email=="" || password==""){
@@ -46,9 +46,9 @@ const Signup = () => {
 
   return (
     <DIV>
-      <div style={{padding: '25px'}}>
+      {/* <div style={{padding: '25px'}}>
         <img width={'270px'} src={signuppic} alt="" />
-      </div>
+      </div> */}
         <div style={{padding:'35px', borderTopRightRadius: '15px', borderBottomRightRadius:'15px', backgroundColor: '#ff4133', width:'450px'}}>
         <h1 style={{ fontSize: "40px", color: "#ffffff" }}>Hey There !</h1>
         <input onChange={(e)=> setName(e.target.value)} type="text" placeholder='Enter Your Name                                         @' />

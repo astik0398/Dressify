@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import login_pic from '../Images/login.png'
+// import login_pic from '../Images/login.png'
 
 const Signin = () => {
 
@@ -37,9 +37,9 @@ const Signin = () => {
 
   return (
     <DIV>
-      <div style={{padding: '25px'}}>
+      {/* <div style={{padding: '25px'}}>
         <img width={'270px'} src={login_pic} alt="" />
-      </div>
+      </div> */}
         <div style={{padding:'35px', borderTopRightRadius: '15px', borderBottomRightRadius:'15px', backgroundColor: '#ff4133', width:'450px'}}>
         <h1 style={{ fontSize: "40px", color: "#ffffff" }}>Welcome Back!</h1>
         <input onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Enter Your Email                                          ✉' />
