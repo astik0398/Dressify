@@ -10,6 +10,7 @@ export const Navbar = () => {
       <Link to={"/"}>Home</Link>
       <Link to={"/products"}>Product</Link>
        <Link to={"/cart"}>Cart</Link>
+       <Link to={"/single/:id"}>SinglePage</Link>
     </DIV>
   );
 

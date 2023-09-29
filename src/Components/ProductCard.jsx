@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProData } from "../Redux/ProductReducer/action";
 import { useEffect } from "react";
 import Loader from "./Loader";
+import { Link } from "react-router-dom";
 
 function ProductCard() {
   const dispatch = useDispatch();
@@ -47,7 +48,7 @@ function ProductCard() {
         prod.map((item) => (
           <div className="card">
             <div className="img">
-              <img src={item.item[0]?.img1} alt="" />
+             <Link to = "/single/:id"> <img src={item.item[0]?.img1} alt="" /></Link>
             </div>
             <div className="top-data">
               <div className="title">
