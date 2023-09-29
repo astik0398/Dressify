@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-// import login_pic from '../Images/login.png'
+import {Link, useNavigate} from 'react-router-dom'
+import login_pic from '../Images/Untitled design.png'
 
 const Signin = () => {
 
@@ -9,6 +9,7 @@ const Signin = () => {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const navigate = useNavigate()
 
   function handleClick(){
 
@@ -29,6 +30,11 @@ const Signin = () => {
 
     if(flag==true){
       alert('Login in success')
+
+      setTimeout(()=> {
+        navigate('/')
+      }, 1000)
+  
     }
     else{
       alert('wrong cred !!')
@@ -37,13 +43,14 @@ const Signin = () => {
 
   return (
     <DIV>
-      {/* <div style={{padding: '25px'}}>
+      <div style={{padding: '25px'}}>
         <img width={'270px'} src={login_pic} alt="" />
-      </div> */}
+      </div>
         <div style={{padding:'35px', borderTopRightRadius: '15px', borderBottomRightRadius:'15px', backgroundColor: '#ff4133', width:'450px'}}>
         <h1 style={{ fontSize: "40px", color: "#ffffff" }}>Welcome Back!</h1>
-        <input onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Enter Your Email                                          ✉' />
-        <input onChange={(e)=> setPassword(e.target.value)} type="password" placeholder='Enter Your Password                                    ꗃ' />
+        <input onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Enter Your Email                                             ✉' />
+        <input onChange={(e)=> setPassword(e.target.value)} type="password" placeholder='Enter Your Password                                       ꗃ' />
+        <p style={{color: 'white'}}>Forgot your Password ?</p>
         <button onClick={handleClick}>Sign In</button>
         <p style={{color: 'white'}}>
           Don't have an account?{" "}
@@ -59,7 +66,7 @@ const Signin = () => {
 export default Signin
 
 const DIV = styled.div`
-    width: 45%;
+    width: 46%;
     margin: auto;
     margin-top: 130px;
     margin-bottom: 30px;
@@ -67,6 +74,7 @@ const DIV = styled.div`
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 15px;
     display: flex;
+    /* border: 2px solid red; */
     
    div{
     /* border: 2px solid blue; */
@@ -75,7 +83,6 @@ const DIV = styled.div`
     width: 50%;
     margin: auto;
     gap: 15px;
-    
    }
 
    input{
