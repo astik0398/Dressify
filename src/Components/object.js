@@ -10,7 +10,7 @@
             "disc": "Jacket featuring a lapel collar with snap-button details. Long sleeves with zipped cuffs. Front zip pockets on the chest and hip. Interior button detail. Asymmetric front fastening with metal zip.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/3427/302/800/2/w/750/3427302800_1_1_1.jpg?ts=1662713271307",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/3427/302/800/2/w/750/3427302800_2_4_1.jpg?ts=1662713298725",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/3427/302/800/2/w/750/3427302800_6_1_1.jpg?ts=1662712286776",
@@ -29,7 +29,7 @@
             "price": 7990,
             "category": "men",
             "rating" : 4,
-            "id" : 1,
+            "id" : 2,
             "detail": " We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
             "disc": "Collared varsity jacket made of fabric which is slightly padded on the inside. Featuring long sleeves, contrast ribbed trims, jetted hip pockets and inside pocket detail. Contrast patches and embroidery on the front and back. Snap-button front.",
             "item": [
@@ -51,12 +51,12 @@
         {
             "name": "DENIM WORKER JACKET",
             "price": 2790,
-            "id" : 1,
+            "id" : 3,
             "category": "kids",
 
             "rating": 5,
             "disc": "Collared denim jacket with long sleeves. Button-up front. Contrast front pockets.",
-            "detail": "MADE TO BE USED MORE, MADE TO BE MADE AGAIN AND MADE FROM SAFE AND RECYCLED OR RENEWABLE MATERIALS.THE JEANS REDESIGN REIMAGINES HISTORY’S MOST ICONIC FASHION ITEM TO TRANSCEND THE HERE AND NOW - MAKING JEANS THAT ARE MORE RESPONSIBLE AND EXTENDING THEIR LIFE CYCLE",
+            "detail": "MADE TO BE USED MORE, MADE TO BE MADE AGAIN AND MADE FROM SAFE AND RECYCLED OR RENEWABLE MATERIALS.THE JEANS redESIGN REIMAGINES HISTORY’S MOST ICONIC FASHION ITEM TO TRANSCEND THE HERE AND NOW - MAKING JEANS THAT ARE MORE RESPONSIBLE AND EXTENDING THEIR LIFE CYCLE",
             "item": [
                 {
                     "color": "blue",
@@ -70,7 +70,7 @@
         {
             "name": "BASIC T-SHIRT",
             "price": 550,
-            "id" : 1,
+            "id" : 4,
             "category": "kids",
 
             "rating": 5,
@@ -103,7 +103,7 @@
         {
             "name": "PUFFER COAT WITH RUBBERISED DETAIL",
             "price": 2490,
-            "id" : 1,
+            "id" : 5,
             "category": "kids",
 
             "rating": 4,
@@ -129,7 +129,7 @@
         {
             "name": "KIDS/ LOAFERS WITH TRACK SOLES",
             "price": 2990,
-            "id" : 1,
+            "id" : 6,
             "category": "kids",
 
             "rating": 3,
@@ -147,9 +147,9 @@
         },
     
         {
-            "name": "EMBROIDERED TULLE TOP",
+            "name": "EMBROIDEred TULLE TOP",
             "price": 2990,
-            "id" : 1,
+            "id" : 7,
             "category" : "women",
             "rating" : 5,
             "detail": "Care for fiber: at least 40% recycled polyamide. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products. ",
@@ -173,14 +173,14 @@
           {
             "name": "FAUX LEATHER DOUBLE-BREASTED BLAZER",
             "price": 5990,
-            "id" : 1,
+            "id" : 8,
             "category" : "women",
             "rating" : 4,
             "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals. ",
             "disc": "Blazer featuring a lapel collar and long sleeves. Front pockets with flaps. Back vent at the hem. Double-breasted fastening with matching covered buttons.",
             "item": [
               {
-                "color": "BLACK",
+                "color": "black",
                 "img1": "https://static.zara.net/photos///2022/I/0/1/p/3046/173/800/12/w/750/3046173800_1_1_1.jpg?ts=1666021157816",
                 "img2": "https://static.zara.net/photos///2022/I/0/1/p/3046/173/800/12/w/750/3046173800_2_3_1.jpg?ts=1666021153970",
                 "img3": "https://static.zara.net/photos///2022/I/0/1/p/3046/573/800/2/w/750/3046573800_6_1_1.jpg?ts=1661960077739",
@@ -197,14 +197,14 @@
           {
             "name": "POLO COLLAR BODYSUIT",
             "price": 890,
-            "id" : 1,
+            "id" : 9,
             "category" : "women",
             "rating" : 5,
             "detail": "Care for water: produced using less water. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products",
             "disc": "Long sleeve bodysuit with a polo collar. Featuring button fastening at the front and snap-button fastening at the bottom.",
             "item": [
               {
-                "color": "BLACK",
+                "color": "black",
                 "img1": "https://static.zara.net/photos///2022/I/0/1/p/4424/641/818/17/w/750/4424641818_2_3_1.jpg?ts=1670255441721",
                 "img2": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-ctx/joinlife-large.svg?ts=1611919362013",
                 "img3": "https://static.zara.net/photos///2022/I/0/1/p/4424/641/818/17/w/750/4424641818_1_1_1.jpg?ts=1670255442170",
@@ -222,7 +222,7 @@
             "name": "PUFFER TECHNICAL JACKET",
             "price": 2990,
             "category": "men",
-            "id" : 1,
+            "id" : 10,
             "rating" : 4,
             "detail": " We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.",
             "disc": "Sightly puffy jacket with a high neck and long sleeves. Side pockets at the hip. Zip-up front.",
@@ -235,7 +235,7 @@
                     "img4": "https://static.zara.net/photos///2022/I/0/2/p/8574/561/401/2/w/750/8574561401_2_5_1.jpg?ts=1668071585685"
                 },
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/8574/561/800/2/w/750/8574561800_6_3_1.jpg?ts=1656669334748",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/8574/561/800/2/w/750/8574561800_2_4_1.jpg?ts=1668071586085",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/8574/561/800/2/w/750/8574561800_2_2_1.jpg?ts=1668071585932",
@@ -246,7 +246,7 @@
         {
             "name": "CONTRAST BOMBER JACKET",
             "price": 8590,
-            "id" : 1,
+            "id" : 11,
             "category": "men",
             "rating" : 5,
             "detail": " We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.",
@@ -270,7 +270,7 @@
         {
             "name": "KIDS/ WATER-REPELLENT PADDED BOOTS",
             "price": 3290,
-            "id" : 1,
+            "id" : 12,
             "category": "kids",
 
             "rating": 4,
@@ -296,7 +296,7 @@
         {
             "name": "VELVET BODYSUIT WITH SEQUINS",
             "price": 1790,
-            "id" : 1,
+            "id" : 13,
             "category": "kids",
 
             "rating": 5,
@@ -315,7 +315,7 @@
         {
             "name": "PUFFER COAT WITH RUBBERISED DETAIL",
             "price": 2490,
-            "id" : 1,
+            "id" : 14,
             "category": "kids",
 
             "rating": 3,
@@ -348,7 +348,7 @@
         {
             "name": "KIDS/ CONTRAST CROSSBODY BAG",
             "price": 1690,
-            "id" : 1,
+            "id" : 15,
             "category": "kids",
 
             "rating": 4,
@@ -364,19 +364,17 @@
                 }
             ]
         },
-   
- 
         {
             "name": "TECHNICAL WINDBREAKER JACKET",
             "price": 7590,
-            "id" : 1,
+            "id" : 16,
             "category": "men",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments. To assess compliance, we have developed a programme of audits and continuous improvement plans.",
             "disc": "Jacket made of lightweight technical fabric with a water-repellent finish. Ergonomic design that adjusts to movement. Designed for playing any sport.      ",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2023/V/0/2/p/1732/305/800/2/w/750/1732305800_2_1_1.jpg?ts=1670839826293",
                     "img2": "https://static.zara.net/photos///2023/V/0/2/p/1732/305/800/2/w/750/1732305800_2_5_1.jpg?ts=1670839826959",
                     "img3": "https://static.zara.net/photos///2023/V/0/2/p/1732/305/800/2/w/750/1732305800_6_1_1.jpg?ts=1670411968486   ",
@@ -393,7 +391,7 @@
         {
             "name": "WIDE-LEG TRF JEANS",
             "price": 2990,
-            "id" : 1,
+            "id" : 17,
             "category" : "women",
             "rating" : 4,
             "detail": "Care for fiber & water: at least 80% ecologically grown cotton & 20% recycled cotton. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products.",
@@ -410,7 +408,7 @@
           {
             "name": "ASYMMETRIC TOP WITH ZIP",
             "price": 2890,
-            "id" : 1,
+            "id" : 18,
             "category" : "women",
             "rating" : 4,
             "detail": "Care for fiber: at least 30% recycled polyester. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products.",
@@ -427,14 +425,14 @@
           {
             "name": "WOOL BLEND FITTED COAT",
             "price": 7990,
-            "id" : 1,
+            "id" : 19,
             "category" : "women",
             "rating" : 5,
             "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals. Thanks to the collaboration with our suppliers, we work to know the facilities and processes used to manufacture our garments in order to know the traceability of our products.",
             "disc": "Collared coat with long sleeves and shoulder pads. Front welt pockets. Back vent at the hem. Fastens at the front with buttons.",
             "item": [
               {
-                "color": "BLACK",
+                "color": "black",
                 "img1": "https://static.zara.net/photos///2022/I/0/1/p/8496/298/800/12/w/850/8496298800_1_1_1.jpg?ts=1667400199707",
                 "img2": "https://static.zara.net/photos///2022/I/0/1/p/8496/298/800/12/w/850/8496298800_2_1_1.jpg?ts=1667400198963",
                 "img3": "https://static.zara.net/photos///2022/I/0/1/p/8496/298/800/12/w/850/8496298800_2_3_1.jpg?ts=1667400200590",
@@ -452,14 +450,14 @@
         {
             "name": "POLARTEC® CONTRAST FLEECE JACKET",
             "price": 6990,
-            "id" : 1,
+            "id" : 20,
             "category": "men",
             "rating" : 5,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments. To assess compliance, we have developed a programme of audits and continuous improvement plans.",
             "disc": "Lightweight jacket made of Polartec® fleece fabric and contrast technical fabric.",
             "item": [
                 {
-                    "color": "OLIVE GREEN",
+                    "color": "OLIVE green",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/1732/401/515/2/w/750/1732401515_1_1_1.jpg?ts=1668766709676",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/1732/401/515/2/w/750/1732401515_2_1_1.jpg?ts=1668766713593",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/1732/401/515/2/w/750/1732401515_2_2_1.jpg?ts=1668766717782",
@@ -477,7 +475,7 @@
         {
             "name": "SLIM FIT JEANS",
             "price": 2490,
-            "id" : 1,
+            "id" : 21,
             "category": "men",
             "rating" : 5,
             "detail": "Care for fiber & water: at least 60% cotton in conversion to ecologically grown cotton. We use the Join Life label on clothing that is produced using technology ",
@@ -499,16 +497,16 @@
             ]
         },
         {
-            "name": "FAUX LEATHER CORSETRY-INSPIRED DRESS",
+            "name": "FAUX LEATHER CORSETRY-INSPIred DRESS",
             "price": 2990,
-            "id" : 1,
+            "id" : 22,
             "category" : "women",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
             "disc": "Off-the-shoulder dress with a straight neckline. Gathered detail. Invisible zip fastening.",
             "item": [
               {
-                "color": "BLACK",
+                "color": "black",
                 "img1": "https://static.zara.net/photos///2022/I/0/1/p/8469/322/800/13/w/750/8469322800_2_1_1.jpg?ts=1670432212413",
                 "img2": "https://static.zara.net/photos///2022/I/0/1/p/8469/322/800/13/w/750/8469322800_2_3_1.jpg?ts=1670432212036",
                 "img3": "https://static.zara.net/photos///2022/I/0/1/p/8469/322/800/13/w/750/8469322800_2_4_1.jpg?ts=1670432212441",
@@ -525,7 +523,7 @@
           {
             "name": "FITTED POPLIN SHIRT",
             "price": 1990,
-            "id" : 1,
+            "id" : 23,
             "category" : "women",
             "rating" : 3,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
@@ -549,14 +547,14 @@
           {
             "name": "SATIN TOP WITH RHINESTONES",
             "price": 2990,
-            "id" : 1,
+            "id" : 24,
             "category" : "women",
             "rating" : 5,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments. ",
             "disc": "Long sleeve top with a round neckline. Featuring an open back with metallic fringing and rhinestone appliqués.",
             "item": [
               {
-                "color": "BLACK",
+                "color": "black",
                 "img1": "https://static.zara.net/photos///2022/I/0/1/p/9371/331/800/3/w/750/9371331800_1_1_1.jpg?ts=1669891245729",
                 "img2": "https://static.zara.net/photos///2022/I/0/1/p/9371/331/800/2/w/750/9371331800_6_1_1.jpg?ts=1669647483400",
                 "img3": "https://static.zara.net/photos///2022/I/0/1/p/9371/331/800/2/w/750/9371331800_6_2_1.jpg?ts=1669647485631",
@@ -573,14 +571,14 @@
         {
             "name": "DENIM SHIRT",
             "price": 2590,
-            "id" : 1,
+            "id" : 25,
             "category": "men",
             "rating" : 3,
             "detail": " Care for water: produced using less water.We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products.",
             "disc": "Regular-fit faded shirt with a button-down collar. Long sleeves with buttoned cuffs. Featuring a chest patch pocket and a button-up front.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/8574/340/800/2/w/750/8574340800_2_3_1.jpg?ts=1657888559846",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/8574/340/800/2/w/750/8574340800_2_4_1.jpg?ts=1657888579914",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/8574/340/800/2/w/750/8574340800_6_1_1.jpg?ts=1657871897371",
@@ -597,7 +595,7 @@
         {
             "name": "OXFORD SHIRT",
             "price": 2590,
-            "id" : 1,
+            "id" : 26,
             "category": "men",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.",
@@ -623,14 +621,14 @@
         {
             "name": "SWEATSHIRT WITH ZIP COLLAR",
             "price": 2890,
-            "id" : 1,
+            "id" : 27,
             "category": "men",
             "rating" : 5,
             "detail": "Care for fiber: at least 25% recycled polyester.We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products",
             "disc": "Sweatshirt featuring a high neck with front zip fastening, long sleeves and ribbed trims.",
             "item": [
                 {
-                    "color": "RED",
+                    "color": "red",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/6462/350/641/2/w/750/6462350641_1_1_1.jpg?ts=1661870060121",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/6462/350/641/2/w/750/6462350641_2_1_1.jpg?ts=1661870059513",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/6462/350/641/2/w/750/6462350641_2_4_1.jpg?ts=1661870091598",
@@ -647,7 +645,7 @@
         {
             "name": "KIDS/ CROCHET SHOPPER BAG",
             "price": 2590,
-            "id" : 1,
+            "id" : 28,
             "category": "kids",
 
             "rating": 5,
@@ -666,7 +664,7 @@
         {
             "name": "WAVY SUNGLASSES",
             "price": 1090,
-            "id" : 1,
+            "id" : 29,
             "category": "kids",
 
             "rating": 4,
@@ -693,7 +691,7 @@
         {
             "name": "BASIC BOMBER JACKET",
             "price": 2990,
-            "id" : 1,
+            "id" : 30,
             "category": "men",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.",
@@ -707,7 +705,7 @@
                     "img4": "https://static.zara.net/photos///2022/I/0/2/p/3918/250/711/2/w/750/3918250711_6_3_1.jpg?ts=1660228177920"
                 },
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/3918/250/800/2/w/750/3918250800_1_1_1.jpg?ts=1665478339352",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/3918/250/800/2/w/750/3918250800_2_5_1.jpg?ts=1665478339260",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/3918/250/800/2/w/750/3918250800_2_2_1.jpg?ts=1665478338243",
@@ -718,14 +716,14 @@
         {
             "name": "FAUX LEATHER BOMBER JACKET",
             "price": 4990,
-            "id" : 1,
+            "id" : 31,
             "category": "men",
             "rating" : 3,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
             "disc": "High neck jacket with long sleeves and ribbed trims. Welt pockets at the hip. Elastic hems. Zip-up front.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/3918/360/800/2/w/750/3918360800_1_1_1.jpg?ts=1659512620970",
                     "img2": "https://static.zara.net/photos///2022/I/0/1/p/3918/360/800/2/w/750/3918360800_2_1_1.jpg?ts=1661241872621",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/3918/360/800/2/w/750/3918360800_2_5_1.jpg?ts=1659512630032",
@@ -742,7 +740,7 @@
         {
             "name": "SLIM FIT SHIRT",
             "price": 2990,
-            "id" : 1,
+            "id" : 32,
             "category": "men",
             "rating" : 5,
             "detail": "Care for water: produced using less water. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products",
@@ -766,7 +764,7 @@
         {
             "name": "PACK OF FOUR SEASHELL EARRINGS",
             "price": 590,
-            "id" : 1,
+            "id" : 33,
             "category": "kids",
 
             "rating": 3,
@@ -784,7 +782,7 @@
         {
             "name": "3-PACK OF PLAIN T-SHIRTS",
             "price": 1490,
-            "id" : 1,
+            "id" : 34,
             "category": "kids",
 
             "rating": 5,
@@ -817,7 +815,7 @@
         {
             "name": "KIDS/ LACE-UP SKATE SNEAKERS",
             "price": 1990,
-            "id" : 1,
+            "id" : 35,
             "category": "kids",
 
             "rating": 2,
@@ -843,7 +841,7 @@
         {
             "name": "TECHNICAL T-SHIRT WITH SYMBOLS",
             "price": 1990,
-            "id" : 1,
+            "id" : 36,
             "category": "men",
             "rating" : 3,
             "detail": "Care for fiber: at least 90% recycled polyester.We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products. ",
@@ -867,7 +865,7 @@
         {
             "name": "HOODED PUFFER JACKET",
             "price": 7990,
-            "id" : 1,
+            "id" : 37,
             "category": "men",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
@@ -891,7 +889,7 @@
         {
             "name": "KIDS/ 3-PACK OF BRIEFS",
             "price": 990,
-            "id" : 1,
+            "id" : 38,
             "category": "kids",
 
             "rating": 1,
@@ -910,7 +908,7 @@
         {
             "name": "KIDS/ RIBBED BEAR PYJAMAS",
             "price": 1590,
-            "id" : 1,
+            "id" : 39,
             "category": "kids",
 
             "rating": 5,
@@ -929,14 +927,14 @@
         {
             "name": "SLIM FIT SUIT BLAZER",
             "price": 5990,
-            "id" : 1,
+            "id" : 40,
             "category": "men",
             "rating" : 3,
             "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals. Thanks to the collaboration with our suppliers, we work to know the facilities and processes used to manufacture our garments in order to know the traceability of our products.",
             "disc": "Blazer with a notched lapel collar. Long sleeves with button detail on the cuffs. Welt pockets at the chest and flap pockets at the hip. Inside pocket detail. Front button fastening.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/1/p/1564/610/800/2/w/750/1564610800_1_1_1.jpg?ts=1665394196477",
                     "img2": "https://static.zara.net/photos///2022/I/0/1/p/1564/610/800/2/w/750/1564610800_2_4_1.jpg?ts=1665394197818",
                     "img3": "https://static.zara.net/photos///2022/I/0/1/p/1564/610/800/2/w/750/1564610800_2_6_1.jpg?ts=1665394196361",
@@ -953,7 +951,7 @@
         {
             "name": "SHORT SLEEVE T-SHIRT",
             "price": 590,
-            "id" : 1,
+            "id" : 41,
             "category" : "women",
             "rating" : 3,
             "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals. ",
@@ -978,7 +976,7 @@
           {
             "name": "DARTED SHORT DRESS",
             "price": 3990,
-            "id" : 1,
+            "id" : 42,
             "category" : "women",
             "rating" : 4,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
@@ -1002,14 +1000,14 @@
         {
             "name": "DOUBLE-BREASTED WOOL BLEND COAT",
             "price": 1899,
-            "id" : 1,
+            "id" : 43,
             "category": "men",
             "rating" : 5,
             "detail": "Care for fiber: at least 30% ecologically grown cotton & 20% recycled polyester. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products",
             "disc": "Round neck sweatshirt with long sleeves. Contrast slogan detail on the front. Ribbed trims.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2022/I/0/2/p/0706/355/800/2/w/750/0706355800_1_1_1.jpg?ts=1666197173484",
                     "img2": "https://static.zara.net/photos///2022/I/0/2/p/0706/355/800/2/w/750/0706355800_2_3_1.jpg?ts=1666195015441",
                     "img3": "https://static.zara.net/photos///2022/I/0/2/p/0706/355/800/2/w/750/0706355800_2_4_1.jpg?ts=1666195016202",
@@ -1026,7 +1024,7 @@
         {
             "name": "SWEATSHIRT WITH SLOGAN PRINT",
             "price": 2990,
-            "id" : 1,
+            "id" : 44,
             "category": "men",
             "rating" : 3,
             "detail": "Care for fiber: at least 30% ecologically grown cotton & 20% recycled polyester. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products.",
@@ -1050,7 +1048,7 @@
         {
             "name": "KIDS/ KNIT WRAP NECK WARMER",
             "price": 890,
-            "id" : 1,
+            "id" : 45,
             "category": "kids",
 
             "rating": 5,
@@ -1086,7 +1084,7 @@
         {
             "name": "SPICE GIRLS © HOODIE",
             "price": 2290,
-            "id" : 1,
+            "id" : 46,
             "category": "kids",
 
             "rating": 4,
@@ -1105,11 +1103,11 @@
         {
           "name": "FELT TEXTURE COAT",
           "price": 4990,
-          "id" : 1,
+          "id" : 47,
           "category" : "women",
           "rating" : 3,
           "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals. Thanks to the collaboration with our suppliers, we work to know the facilities and processes used to manufacture our garments in order to know the traceability of our products.",
-          "disc": "Open coat with a lapel collar and long sleeves. Bluish Pink marl",
+          "disc": "Open coat with a lapel collar and long sleeves. Bluish pink marl",
           "item": [
             {
               "color": "blue",
@@ -1130,7 +1128,7 @@
         {
           "name": "WOOL BLEND COAT WITH STUDS",
           "price": 13990,
-          "id" : 1,
+          "id" : 48,
           "category" : "women",
           "rating" : 5,
           "detail": "We work with our suppliers, workers, unions and international organizations to develop a supply chain in which human rights are respected and promoted, contributing to the United Nations Sustainable Development Goals.",
@@ -1147,7 +1145,7 @@
         {
             "name": "FAUX FUR BEAR BLANKET",
             "price": 1790,
-            "id" : 1,
+            "id" : 49,
             "category": "kids",
 
             "rating": 2,
@@ -1166,7 +1164,7 @@
         {
             "name": "CHERRY WATERMELON ICE 40 ML / 1.35 OZ",
             "price": 1290,
-            "id" : 1,
+            "id" : 50,
             "category": "kids",
 
             "rating": 4,
@@ -1186,7 +1184,7 @@
             "name": "WINDPROOF AND WATER-REPELLENT APRÈS SKI QUILTED CARGO TROUSERS",
             "price": 3790,
             "category": "kids",
-
+             "id" : 51,
             "rating": 5,
             "disc": "Wind-proof and water-repellent quilted cargo trousers featuring an elasticated waistband, front snap-button fastening, belt appliqué, front pockets, rear patch pockets, leg pockets with flaps and fleece lining",
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
@@ -1203,14 +1201,14 @@
         {
           "name": "TROUSERS WITH LINED BELT",
           "price": 2990,
-          "id" : 1,
+          "id" : 52,
           "category" : "women",
           "rating" : 5,
           "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments. To assess compliance, we have developed a programme of audits and continuous improvement plans.",
           "disc": "High-waist trousers with a matching lined belt. Featuring front pockets, false welt back pockets and metal hook, inside button and zip fly fastening.",
           "item": [
             {
-              "color": "BLACK",
+              "color": "black",
               "img1": "https://static.zara.net/photos///2022/I/0/1/p/4387/630/800/17/w/850/4387630800_1_1_1.jpg?ts=1663314812380",
               "img2": "https://static.zara.net/photos///2021/I/0/1/p/8034/789/800/2/w/850/8034789800_6_1_1.jpg?ts=1623925508543",
               "img3": "https://static.zara.net/photos///2021/I/0/1/p/8034/789/800/2/w/850/8034789800_6_2_1.jpg?ts=1623925513698",
@@ -1228,14 +1226,14 @@
         {
           "name": "LIMITED EDITION LACE-TRIMMED TOP",
           "price": 2990,
-          "id" : 1,
+          "id" : 53,
           "category" : "women",
           "rating" : 3,
           "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.To assess compliance, we have developed a programme of audits and continuous improvement plans.",
           "disc": "V-neck camisole top with thin straps. Metallic thread appliqué detail. Adjustable sides with ties in the same fabric. Asymmetric hem.",
           "item": [
             {
-              "color": "BLACK",
+              "color": "black",
               "img1": "https://static.zara.net/photos///2022/I/0/1/p/6895/262/800/12/w/750/6895262800_1_1_1.jpg?ts=1671119965995",
               "img2": "https://static.zara.net/photos///2022/I/0/1/p/6895/262/800/12/w/750/6895262800_2_2_1.jpg?ts=1671119968209",
               "img3": "https://static.zara.net/photos///2022/I/0/1/p/6895/262/800/2/w/750/6895262800_6_2_1.jpg?ts=1668611125569",
@@ -1254,7 +1252,7 @@
             "price": 5990,
             "category": "men",
             "rating" : 4,
-            "id" : 1,
+            "id" : 54,
             "detail": "Care for fiber: at least 15% recycled cotton. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products. ",
             "disc": "Lightweight varsity jacket. Ribbed finish on the collar. Long sleeves with elasticated cuffs. Hip welt pockets. Contrast patch appliqués. Ribbed hem. Snap-button fastening on the front.",
             "item": [
@@ -1277,13 +1275,13 @@
             "name": "BASIC BOMBER JACKET",
             "price": 2990,
             "category": "men",
-            "id" : 1,
+            "id" : 55,
             "rating" : 5,
             "detail": "We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our garments.",
             "disc": "Jacket with a ribbed collar and long sleeves. Welt pockets at the hip. Elastic hem. Zip-up front.",
             "item": [
                 {
-                    "color": "BLACK",
+                    "color": "black",
                     "img1": "https://static.zara.net/photos///2023/V/0/1/p/4302/408/800/2/w/750/4302408800_1_1_1.jpg?ts=1669650629633",
                     "img2": "https://static.zara.net/photos///2023/V/0/1/p/4302/408/800/2/w/36/4302408800_2_4_1.jpg?ts=1669650630057",
                     "img3": "https://static.zara.net/photos///2023/V/0/1/p/4302/408/800/2/w/36/4302408800_2_5_1.jpg?ts=1669650629195",
@@ -1300,7 +1298,7 @@
         {
           "name": "RIBBED TOP",
           "price": 590,
-          "id" : 1,
+          "id" : 56,
           "category" : "women",
           "rating" : 4,
           "detail": " Care for water: produced using less water.We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products. ",

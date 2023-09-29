@@ -1,0 +1,115 @@
+#cars-data.cars-data {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 10px;
+  .img {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 300px;
+      transition: transform 0.5;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    height: max-content;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      .name {
+        span {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .color{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        span{
+            border-radius: 50%;
+            padding: 5px;
+        }
+      }
+     
+    }
+    .top-data {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 5px;
+    }
+    .addtocart {
+      padding: 15px 20px;
+      background-color: #08255f;
+      background-image: linear-gradient(
+        to right,
+        #487fed 0%,
+        #08255f 51%,
+        #256bf7 100%
+      );
+      background-size: 200% auto;
+      border: none;
+      transition: 0.9s;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      font-size: 16px;
+
+      &:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .details-data {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 5px;
+    }
+    strong {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content: left;
+      span {
+        font-weight: 600;
+        color: gray;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 601px) {
+  #cars-data.cars-data {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+//   @media screen and (max-width: 900px) {
+
+//        #cars-data.cars-data {
+//         grid-template-columns: 40% 40%
+//       }
+
+//   }

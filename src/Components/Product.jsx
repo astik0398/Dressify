@@ -1,22 +1,18 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from "react";
+
+import ProductCard from "./ProductCard";
+  import "../Components/Produc.scss"
 
 function Product() {
 
-  const {products, store} = useSelector((store) => {
-    console.log(store)
-    return {
-      products : store.ProductReducer.products
-
-    }
-})
-
 
   return (
-    <div>
+    <div className="Prod_contain">
       <h1>Product</h1>
+
+        <ProductCard/>
     </div>
-  )
+  );
 }
 
-export default Product
+export default Product;
