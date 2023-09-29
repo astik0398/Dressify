@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import { useDispatch } from 'react-redux'
+import { postProduct } from '../Redux/ProductReducer/action'
 
 const Admin = () => {
 
@@ -8,16 +10,18 @@ const [name, setName] = useState("")
 const [price, setPrice] = useState("")
 const [category, setCategory] = useState("")
 const [rating, setRating] = useState(0)
-const [detail, setDetail] = useState("")
+const [detail, setDetail] = useState("Easy 15 days return and exchange. Return Policies may vary based on products and promotions.")
 
 const [item, setItem] = useState([])
 
-const [color, setColor] = useState("")
-const [img1, setImg1] = useState("")
-const [img2, setImg2] = useState("")
-const [img3, setImg3] = useState("")
+const [color, setColor] = useState("black")
+const [img1, setImg1] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/qIRV/6496b763eebac147fcfc1a46/-473Wx593H-465559587-black-MODEL2.jpg")
+const [img2, setImg2] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/YWue/6496b763eebac147fcfc1a4b/-473Wx593H-465559587-black-MODEL5.jpg")
+const [img3, setImg3] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/5skE/6496b763eebac147fcfc1a4e/-473Wx593H-465559587-black-MODEL6.jpg")
 
 const [deleteId, setDeleteId] = useState(null)
+
+const dispatch = useDispatch()
 
 function handleSubmit(e){
     e.preventDefault()
@@ -30,23 +34,17 @@ function handleSubmit(e){
     name, price, category, rating, detail, item
    }
 
-   axios.post('https://dressify-mock-server-final.onrender.com/products', newProduct)
-   .then(function(res){
-    console.log(res.data);
-   })
-   .catch(function(){
-    console.log('Error has been occurred !');
-   })
+   dispatch(postProduct(newProduct))
 
-  setName("");
-  setPrice(0);
-  setCategory("");
-  setRating(0);
-  setDetail("");
-  setColor("");
-  setImg1("");
-  setImg2("");
-  setImg3("");
+//   setName("");
+//   setPrice(0);
+//   setCategory("");
+//   setRating(0);
+//   setDetail("");
+//   setColor("");
+//   setImg1("");
+//   setImg2("");
+//   setImg3("");
    
 }
 
@@ -55,18 +53,14 @@ function handleDelete(e){
 
     axios.delete(`https://dressify-mock-server-final.onrender.com/products/${deleteId}`)
     .then(function(res){
-        console.log(res);
+        console.log(res.data);
     })
-    .catch(function(){
-        console.log('Error While Deleting');
-    })
-    
     setDeleteId("")
 }
 
   return (
     <DIV>
-        <h2>ADD A PRODUCT</h2>
+        <h2 style={{textAlign:'center', marginBottom:'15px'}}>ADD A PRODUCT</h2>
         <div>
         <form onSubmit={handleSubmit}>
             <input value={name} onChange={(e)=> setName(e.target.value)} type="text" placeholder='Enter Product Name' />
@@ -91,9 +85,9 @@ function handleDelete(e){
         </form>
         </div>
 
-        <h2>DELETE PRODUCT</h2>
+        <h2 style={{textAlign:'center', marginTop:'25px'}}>DELETE PRODUCT</h2>
 
-        <div style={{marginTop: '25px', marginBottom:'25px'}}>
+        <div style={{marginTop: '20px', marginBottom:'25px'}}>
             <form onSubmit={handleDelete}>
                 <input value={deleteId} onChange={(e)=> setDeleteId(e.target.value)} type="number" placeholder='Enter Product ID Here' />
                 <button style={{height: '30px', width:'200px', margin:'auto', borderRadius:'12px', border:'none', boxShadow:'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px'}} type='submit'>DELETE PRODUCT</button>
@@ -109,7 +103,7 @@ const DIV = styled.div`
     
     width: 40%;
     margin: auto;
-    margin-top: 42px;
+    margin-top: 35px;
     /* background-color: white; */
     /* display: flex; */
 
@@ -123,7 +117,7 @@ const DIV = styled.div`
     form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
     width: 85%;
     margin: auto;
     }

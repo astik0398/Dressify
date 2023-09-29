@@ -1,5 +1,5 @@
 import axios from "axios"
-import { PROD_FAILURE, PROD_RQUEST, PROD_SUCCESS, SINGLE_PROD_SUCCSS } from "./actionTypes"
+import { POST_PRODUCT_SUCCESS, PROD_FAILURE, PROD_RQUEST, PROD_SUCCESS } from "./actionTypes"
 
 
 
@@ -16,5 +16,18 @@ axios.get(`https://dressify-mock-server-final.onrender.com/products`).then((res)
 
 }
 
+// POSTING PRODUCTS
 
+// https://dressify-mock-server-final.onrender.com/products
 
+export const postProduct =(newProduct)=> (dispatch)=> {
+
+    axios.post(`https://dressify-server-project.onrender.com/products`, newProduct)
+    .then(function(res){
+        dispatch({type: POST_PRODUCT_SUCCESS, payload: res.data});
+    })
+    .catch(function(){
+        // dispatch({type: PROD_FAILURE})
+        console.log('post error');
+    })
+}
