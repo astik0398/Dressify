@@ -1,16 +1,18 @@
 import React from "react";
 
 import ProductCard from "./ProductCard";
-  import "../Components/Produc.scss"
+import "../Components/Produc.scss";
 
 function Product() {
-
-
   return (
-    <div className="Prod_contain">
-      <h1>Product</h1>
-
-        <ProductCard/>
+    <div
+      style={{ display: "grid", gridTemplateColumns: "20% 78%", gap:"10px" }}
+      className="Prod_contain"
+    >
+      <div style={{ border: "1px solid red"}}></div>
+      <div>
+        <ProductCard />
+      </div>
     </div>
   );
 }

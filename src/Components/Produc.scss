@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 24% 24% 24% 24%;
   gap: 10px;
   .img {
     position: relative;
@@ -31,10 +31,13 @@
       justify-content: space-between;
 
       .name {
+          
         span {
-          width: 100%;
-          overflow: hidden;
-          text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 80%;
+            display: inline-block;  
         }
       }
       .color{
@@ -56,19 +59,17 @@
       padding: 5px;
     }
     .addtocart {
-      padding: 15px 20px;
-      background-color: #08255f;
-      background-image: linear-gradient(
-        to right,
-        #487fed 0%,
-        #08255f 51%,
-        #256bf7 100%
-      );
-      background-size: 200% auto;
-      border: none;
-      transition: 0.9s;
-      color: white;
-      border-radius: 10px;
+        background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    padding: 15px 45px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
       cursor: pointer;
       width: 100%;
       font-weight: bold;
@@ -100,6 +101,48 @@
   }
 }
 
+
+.loader-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-top: 8px solid hsl(0, 100%, 50%);
+    border-right: 8px solid white;
+    border-bottom: 8px solid #09902b;
+    border-left: 8px solid white;
+    border-radius: 90%;
+    animation: spin 0.7s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+ 
+    100% {
+      transform: rotate(360deg);
+    }
+ 
+  }
+  
+  .loading-text {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+
+
+
 @media screen and (max-width: 601px) {
   #cars-data.cars-data {
     grid-template-columns: repeat(1, 1fr);
@@ -113,3 +156,7 @@
 //       }
 
 //   }
+
+
+
+

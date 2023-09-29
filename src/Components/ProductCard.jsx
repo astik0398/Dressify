@@ -2,11 +2,23 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProData } from "../Redux/ProductReducer/action";
 import { useEffect } from "react";
+import Loader from "./Loader";
 
 function ProductCard() {
   const dispatch = useDispatch();
 
-  const prod = useSelector((store) => store.ProductReducer.products);
+//   const prod = useSelector((store) => store.ProductReducer.products);
+
+  const {prod, isLoading} = useSelector((store) => {
+    console.log(store)
+    return {
+
+        prod :  store.ProductReducer.products,
+        isLoading :  store.ProductReducer.isLoading
+    }
+  })
+
+ 
 
   const colorMap = {
     black: "rgb(0, 0, 0)",
@@ -23,8 +35,14 @@ function ProductCard() {
     dispatch(getProData);
   }, []);
 
+
+
   return (
+    <>
+{isLoading  && <Loader/>}
     <div id="cars-data" className="cars-data">
+
+
       {prod.length > 0 &&
         prod.map((item) => (
           <div className="card">
@@ -50,10 +68,13 @@ function ProductCard() {
               </div>
               <strong> ₹ {item.price}</strong>
             </div>
-            <button className="addtocart">Add to Cart</button>
+             <div>
+             <button className="addtocart">Add to Cart</button>
+             </div>
           </div>
         ))}
     </div>
+    </>
   );
 }
 

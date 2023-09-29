@@ -790,19 +790,20 @@
             "detail": "Care for water: produced using less water. We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products. ",
             "item": [
                 {
-                    "color": "green",
-                    "img1": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
-                    "img2": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
-                    "img3": "https://static.zara.net/photos///2022/I/0/3/p/1887/792/120/2/w/27/1887792120_6_3_1.jpg?ts=1662109480452",
-                    "img4": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833"
-                },
-                {
                     "color": "blue",
                     "img1": "https://static.zara.net/photos///2022/I/0/3/p/1887/792/112/2/w/27/1887792112_6_1_1.jpg?ts=1662109479887",
                     "img2": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
                     "img3": "https://static.zara.net/photos///2022/I/0/3/p/1887/792/112/2/w/27/1887792112_6_3_1.jpg?ts=1662109480302",
                     "img4": "https://static.zara.net/photos///2022/I/0/3/p/1887/792/112/2/w/27/1887792112_6_4_1.jpg?ts=1662109490824"
                 },
+                {
+                    "color": "green",
+                    "img1": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
+                    "img2": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
+                    "img3": "https://static.zara.net/photos///2022/I/0/3/p/1887/792/120/2/w/27/1887792120_6_3_1.jpg?ts=1662109480452",
+                    "img4": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833"
+                },
+            
                 {
                     "color": "white",
                     "img1": "https://static.zara.net/photos///contents/cm/media-transformations/joinlife-kids-ctx/joinlife-kids-large.svg?ts=1611920113833",
