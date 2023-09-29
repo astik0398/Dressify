@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 function Cart(){
     const [quantity,setQuantity]=useState(1)
+    const[discount,setDiscount]=useState(0);
     const dispatch=useDispatch();
     const cartItem=[{
         image:"",
@@ -23,12 +25,21 @@ function Cart(){
         
         total:300
     }];
+    const handleChange=(e)=>{
+     setDiscount(e.target.value)
+    }
     const handleAdd=()=>{
       setQuantity(prev=>prev+1)
     }
     const handleReduce=()=>{
       setQuantity((prev)=>prev-1)
     }
+    
+        let subTotal=0;
+     for(let i=0; i<cartItem.length; i++){
+       subTotal+=cartItem[i].price*quantity;
+     }   
+
 return(
     <div>
         <h1>Your Shopping Cart</h1>
@@ -74,16 +85,20 @@ return(
     <div style={{boxShadow:" rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"}} >
         <h1>Order Summary</h1>
         <div>
-        <input placeholder="Discount Voucher" style={{width:"70%",height:"20px"}} />
+        <input placeholder="Discount Voucher" style={{width:"70%",height:"20px"}} value={discount} 
+        onChange={(e)=>handleChange(e)}
+        />
         <button style={{backgroundColor:"red",color:"white",width:"25%",height:"20px"}} >Apply</button>
         </div>
-        <h1>Sub Total:{}</h1>
-        <h1>Discount</h1>
-        <h1>Delivery Charge</h1>
+        <h1>Sub Total:{subTotal}</h1>
+        <h1>Discount:{discount}</h1>
+        <h1>Delivery Charge:100</h1>
         <br/>
         <br/>
-        <h1>Total</h1>
-        <button>Buy This Product</button>
+        <h1>Total:{subTotal-discount+100}</h1>
+        <br/>
+        <button style={{width:"90%",height:"30px", 
+        backgroundColor:"black",color:"white"}} >Buy This Product</button>
     </div>
 </div>
     </div>
