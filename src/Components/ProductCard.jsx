@@ -66,10 +66,10 @@ function ProductCard() {
                   ))}
                 </div>
               </div>
-              <strong> ₹ {item.price}</strong>
+              <strong> ₹{item.price}</strong>
             </div>
              <div>
-             <button className="addtocart">Add to Cart</button>
+             {/* <button className="addtocart">Add to Cart</button> */}
              </div>
           </div>
         ))}
