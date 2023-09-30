@@ -8,7 +8,9 @@ function Cart(){
     const dispatch=useDispatch();
     const cartItem=JSON.parse(localStorage.getItem('cartItem8467'));
     //const [cartData, setCartData] = useState(JSON.parse(localStorage.getItem("cartItem8467")) || []);
-    console.log("cartItem",cartItem[0].item[0].img1,cartItem)
+    // console.log("cartItem",cartItem[5].item[0].img1,cartItem)
+    // console.log(el.item[0].img1)
+
     const handleChange=(e)=>{
      setDiscount(e.target.value)
     }
@@ -51,11 +53,12 @@ return(
         </thead>
         <tbody style={{boxShadow:" rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"}} >
             {cartItem && cartItem.map((el)=>{
+console.log(el)
                 return(
                     <tr>
-                        <td><img  style={{width:"20%",height:"auto"}} src={el.item[0].img1} /> </td>
+        <td><img  style={{width:"20%",height:"auto"}} src={el.item[0].img1} /> </td>
                         <td><h3>{el.name}</h3></td>
-                        <td><h3>{el.price}</h3></td>
+                        <td><h3>prie{el.price}</h3></td>
                         <td><div style={{display:"flex",justifyContent:"space-around"}} >
                             <button onClick={handleAdd} style={{width:"20px",height:"20px"}}>+</button>
                             <p>{quantity}</p>
