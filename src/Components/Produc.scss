@@ -20,7 +20,14 @@
       transform: scale(1.03);
     }
   }
-  
+  p{
+    // background-color: red;
+    border-radius: 50%;
+    // border: 1px solid black;
+    padding: 5px;
+    color: rgb(6, 6, 6);
+  }
+
 
   .card {
     display: flex;

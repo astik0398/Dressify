@@ -60,7 +60,10 @@ function ColourComp({item}) {
               ))}
           </div>
         </div>
-        <strong> ₹{item.price}</strong>
+       <div style={{display:"flex", justifyContent:"space-between"}}>
+       <strong> ₹{item.price}</strong>
+        <p className= {item.rating > 4 ? "red" : "green"}> {item.rating}</p>
+       </div>
       </div>
       <div>{/* <button className="addtocart">Add to Cart</button> */}</div>
     </div>
