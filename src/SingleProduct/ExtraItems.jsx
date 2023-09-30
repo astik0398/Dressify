@@ -1,19 +1,15 @@
 import React, {useRef} from 'react';
 import "./ExtraItems.css";
+import { useSelector } from 'react-redux';
 
-let products = [
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
-  ];
+// let products = [
+//     {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+//     {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+//   ];
 
 export const ExtraItems = () => {
+
+  const prod = useSelector((store) => store.ProductReducer.products);
     
     const scrollContainerRef = useRef(null);
 
@@ -31,14 +27,20 @@ export const ExtraItems = () => {
   
     return (
       <>
-      <h1 style={{textAlign: "left"}}>Recently Added</h1>
+      <h2 style={{textAlign: "left"}}>Recently Added</h2>
       <div className="product-carousel">
         <button className='pre-btn' onClick={scrollLeft}>&lt; Scroll Left</button>
         <div className="scroll-container" ref={scrollContainerRef}>
-          {products.map((element, index) => (
-            <div key={index} className='item-card'>
-                <img src={element.image} alt='' />
-            </div>
+          {prod.map((element, index) => (
+            <div class="product-card">
+                    <div class="product-image">
+                        <img src={element.item[0]?.img1} class="product-thumb" alt="" />
+                    </div>
+                    <div class="product-info">
+                        <h5 class="broduct-brand">{element.name}</h5>
+                        <span class="price">₹{element.price}</span>
+                    </div>
+                </div>
           ))}
         </div>
         <button className='next-btn' onClick={scrollRight}>Scroll Right &gt;</button>

@@ -84,10 +84,9 @@ export const SinglePage = () => {
                 <h3>Colors Available</h3>
                 <br />
                 <div className='button'>
-                    <button className='color-button'></button>
-                    <button className='color-button'></button>
-                    <button className='color-button'></button>
-                    <button className='color-button'></button>
+                    {singleData.item?.map((el) => (
+                        <button className='color-button' style={{background: el.color}}></button>
+                    ))}
                 </div>
             </div>
             <br />
