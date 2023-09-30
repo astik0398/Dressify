@@ -1,33 +1,48 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./ExtraItems.css";
 
+let products = [
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+    {image: "https://pinkbuddha.s3.ap-south-1.amazonaws.com/images/product-img/thumb/boysenberry-georgette-frock-1695617768.jpg"},
+  ];
+
 export const ExtraItems = () => {
-    const productArr = [
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-        "https://placehold.co/400",
-    ];
+    
+    const scrollContainerRef = useRef(null);
 
-
-  return (
-    <div className='product'>
-        <h2 class="product-category">Recently Added </h2>
-        <button className="pre-btn"><img src="../../public/arrow.png" alt="" /></button>
-        <button className="next-btn"><img src="../../public/arrow.png" alt="" /></button>
-        <div className="product-container">
-            {
-                productArr.map((image, i) => (
-                    <div class="product-card" key={i}>
-                        <img src={image} alt='' />
-                    </div>
-                ))
-            }
+    const scrollLeft = () => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollLeft -= 500; // Adjust the scroll distance as needed
+      }
+    };
+  
+    const scrollRight = () => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollLeft += 500; // Adjust the scroll distance as needed
+      }
+    };
+  
+    return (
+      <>
+      <h1 style={{textAlign: "left"}}>Recently Added</h1>
+      <div className="product-carousel">
+        <button className='pre-btn' onClick={scrollLeft}>&lt; Scroll Left</button>
+        <div className="scroll-container" ref={scrollContainerRef}>
+          {products.map((element, index) => (
+            <div key={index} className='item-card'>
+                <img src={element.image} alt='' />
+            </div>
+          ))}
         </div>
-    </div>
-  )
+        <button className='next-btn' onClick={scrollRight}>Scroll Right &gt;</button>
+      </div>
+      </>
+    )
 }
