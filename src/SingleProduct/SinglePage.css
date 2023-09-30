@@ -35,6 +35,7 @@ img {
 
 .size-button {
     border: none;
+    background-color: #E0E0E0;
     width: 50px;
     height: 50px;
     border-radius: 15%;
@@ -59,10 +60,16 @@ img {
 
 .buy-button {
     width: 80%;
+    background: #010008;
+    color: #fff;
     display: inline-block;
     padding: 1rem 2.8rem;
     border-radius: 4rem;
     font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: 700;
+}
+
+.price {
+    color: #F44336
 }
