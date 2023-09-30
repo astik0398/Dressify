@@ -7,7 +7,7 @@ export const SingleProductPage = () => {
   return (
     <div>
         <SinglePage />
-        <ExtraItems />
+        {/* <ExtraItems /> */}
     </div>
   )
 }
