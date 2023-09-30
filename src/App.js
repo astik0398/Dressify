@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import './App.css';
 import { Navbar } from "./Components/Navbar";
 import { MainRoutes } from "./Pages/MainRoutes";
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <MainRoutes />
+      <Toaster/>
       </div>
   );
 }

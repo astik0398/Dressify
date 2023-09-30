@@ -4,12 +4,17 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 
 export const SinglePage = () => {
 
     const prod = useSelector((store) => store.ProductReducer.products);
     const [singleData, setSingleData] = useState({});
+    //  cart
+    const [cart, setCart] = useState([]);
+  const [cartLength, setCartLength] = useState(0);
+
   
     const { id } = useParams();
   
@@ -20,13 +25,53 @@ export const SinglePage = () => {
     }, []);
 
     // add to local storage for cart item-----
-    const [cartData, setCartData] = useState(JSON.parse(localStorage.getItem("cartItem8467")) || []);
 
-    const handleAddToCart = (newData) => {
-        setCartData((prev) => (
-            [...prev, newData]
-        ))
-        localStorage.setItem("cartItem8467", JSON.stringify(cartData))
+    const handleAddToCart = (item) => {
+        const itemName = item.name.trim().toLowerCase();
+
+        const itemAlreadyInCart = cart.some(
+          (cartItem) => cartItem.name.trim().toLowerCase() === itemName
+        );
+    
+        if (itemAlreadyInCart) {
+          toast.error("Item is already in the cart.",{
+            style: {
+              borderRadius: "50px",
+              background: "#000428",
+              color: "#ffffff",
+              padding: "1rem 1.5rem",
+              fontWeight: "600",
+            },
+          });
+        } else {
+          try {
+            const updatedCart = [...cart, { ...item, quantity: 1 }];
+    
+    
+            setCart(updatedCart);
+            localStorage.setItem("cart", JSON.stringify(updatedCart));
+            setCartLength(updatedCart.length);
+            toast.success("Added to Cart !", {
+                style: {
+                  borderRadius: "50px",
+                  background: "#000428",
+                  color: "#ffffff",
+                  padding: "1rem 1.5rem",
+                  fontWeight: "600",
+                },
+              });
+          } catch (error) {
+            toast.error(error.message, {
+                style: {
+                  borderRadius: "50px",
+                  background: "#000428",
+                  color: "#ffffff",
+                  padding: "1rem 1.5rem",
+                  fontWeight: "600",
+                },
+              });
+          }
+        }  
     };
     
 
@@ -50,6 +95,14 @@ export const SinglePage = () => {
         setSize(s)
     };
 
+
+
+    //  cart
+    useEffect(() => {
+        const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+        setCart(storedCart);
+        setCartLength(storedCart.length);
+      }, []);
 
   return (
     <div className='single-wrapper'>  
