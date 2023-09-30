@@ -12,7 +12,7 @@ const [category, setCategory] = useState("")
 const [rating, setRating] = useState(0)
 const [detail, setDetail] = useState("")
 
-const [item, setItem] = useState([])
+const [itemm, setItemm] = useState([])
 
 const [color, setColor] = useState("")
 const [img1, setImg1] = useState("")
@@ -28,12 +28,12 @@ function handleSubmit(e){
 
    const obj = {color, img1, img2, img3}
 
-   setItem([...item, obj])
+   setItemm([...itemm, obj])
 
-   const newObj = [...item, obj]
+   const item = [...itemm, obj]
 
    const newProduct = {
-    name, price, category, rating, detail, newObj
+    name, price, category, rating, detail, item
    }
 
    dispatch(postProduct(newProduct))
