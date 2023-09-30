@@ -15,15 +15,16 @@ function Product() {
   const [category, setcategory] = useState(
     searchParams.getAll("category") || []
   );
+  const [rating, setrating] = useState(searchParams.get("rating") || "");
+  const [order, setorder] = useState(searchParams.get("order") || "");
 
   const handle_category = (e) => {
     const { value } = e.target;
-    if (value == 'all') {
+    if (value == "all") {
       setsearchParams({});
-    }
-    else{
+    } else {
       let newCategory = [];
-      
+
       if (newCategory.includes(value)) {
         newCategory = newCategory.filter((ele) => ele !== value);
       } else {
@@ -37,21 +38,50 @@ function Product() {
   //  sort
   const handle_sort = (e) => {
     const { value } = e.target;
+    setorder(value)
   };
+
+  //  rating
+  const handle_rating = (e) => {
+    const { value } = e.target;
+    // console.log(value)
+
+    if (value == "rate") {
+      setsearchParams({});
+    } else {
+      let newrating = [];
+      if (newrating.includes(value)) {
+        newrating = newrating.filter((ele) => ele !== value);
+      } else {
+        newrating.push(value);
+      }
+      setrating(newrating);
+      console.log(newrating);
+    }
+  };
+
+  //  search 
+  const search_prod = () => {
+
+  }
 
   useEffect(() => {
     let params = {
       category: category,
+      rating: rating,
+
     };
-
+order && (params.order = order)
     setsearchParams(params);
-  }, [category]);
+  }, [category, rating, order]);
 
-  
   useEffect(() => {
     const paramObj = {
       params: {
         category: searchParams.getAll("category"),
+        rating: searchParams.get("rating"),
+        _sort: searchParams.get("order") && "price",
+        _order: searchParams.get("order"),
       },
     };
     dispatch(getProData(paramObj));
@@ -89,7 +119,7 @@ function Product() {
           <select
             onChange={handle_category}
             className="select-common"
-            name=""
+            name="category"
             id=""
           >
             <option value="all">Product Type</option>
@@ -113,8 +143,13 @@ function Product() {
             </option>
           </select>
 
-          <select className="select-common" name="" id="">
-            <option value="">Rating</option>
+          <select
+            onChange={handle_rating}
+            className="select-common"
+            name="rating"
+            id=""
+          >
+            <option value="rate">Rating</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -122,6 +157,7 @@ function Product() {
             <option value="5">5</option>
           </select>
           <input
+            onChange={search_prod}
             style={{ flexGrow: "1" }}
             className="select-common"
             type="text"
