@@ -16,9 +16,7 @@ axios.get(`https://dressify-server-project.onrender.com/products`, paramObj).the
 
 }
 
-// POSTING PRODUCTS
-
-// https://dressify-mock-server-final.onrender.com/products
+// POSTING PRODUCTS final:  https://dressify-server-project.onrender.com/products
 
 export const postProduct =(newProduct)=> (dispatch)=> {
 
