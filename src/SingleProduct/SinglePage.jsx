@@ -18,6 +18,16 @@ export const SinglePage = () => {
       console.log(prodata)
       prodata && setSingleData(prodata)
     }, []);
+
+    // add to local storage for cart item-----
+    const [cartData, setCartData] = useState(JSON.parse(localStorage.getItem("cartItem8467")) || []);
+
+    const handleAddToCart = (newData) => {
+        setCartData((prev) => (
+            [...prev, newData]
+        ))
+        localStorage.setItem("cartItem8467", JSON.stringify(cartData))
+    };
     
 
     let obj = {
@@ -66,7 +76,7 @@ export const SinglePage = () => {
             <br />
             <h3>Rating</h3>
             <br />
-            <h3>₹{singleData.price}</h3>
+            <h3 className='price'>₹{singleData.price}</h3>
             <br />
             <div>
                 <h3>Select Size</h3>
@@ -91,8 +101,10 @@ export const SinglePage = () => {
             </div>
             <br />
             <div>
-                <button className='buy-button'>
-                    Buy This Product
+                <button className='buy-button'
+                 onClick={() => handleAddToCart(singleData)}
+                >
+                    Add to Cart This Product
                 </button>
             </div>
         </div>
