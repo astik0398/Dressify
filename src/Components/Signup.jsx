@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import signuppic from '../Images/Untitled design (1).png'
 
 const Signup = () => {
@@ -8,6 +8,8 @@ const Signup = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+
+  const navigate = useNavigate()
 
   const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
 
@@ -27,6 +29,10 @@ const Signup = () => {
       localStorage.setItem('credentials', JSON.stringify(signup_ls))
 
       alert('SIGN UP SUCCESS !!')
+      
+      setTimeout(()=> {
+        navigate('/signin')
+      }, 1000)
     }
     
   }

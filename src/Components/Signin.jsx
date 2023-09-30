@@ -29,12 +29,13 @@ const Signin = () => {
     }
 
     if(flag==true){
-      alert('Login in success')
+      // alert('Login in success')
 
-      setTimeout(()=> {
-        navigate('/')
-      }, 1000)
-  
+      // setTimeout(()=> {
+        
+      // }, 1000)
+
+      navigate('/')
     }
     else{
       alert('wrong cred !!')

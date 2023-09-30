@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
@@ -10,14 +10,14 @@ const [name, setName] = useState("")
 const [price, setPrice] = useState("")
 const [category, setCategory] = useState("")
 const [rating, setRating] = useState(0)
-const [detail, setDetail] = useState("Easy 15 days return and exchange. Return Policies may vary based on products and promotions.")
+const [detail, setDetail] = useState("")
 
 const [item, setItem] = useState([])
 
-const [color, setColor] = useState("black")
-const [img1, setImg1] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/qIRV/6496b763eebac147fcfc1a46/-473Wx593H-465559587-black-MODEL2.jpg")
-const [img2, setImg2] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/YWue/6496b763eebac147fcfc1a4b/-473Wx593H-465559587-black-MODEL5.jpg")
-const [img3, setImg3] = useState("https://assets.ajio.com/medias/sys_master/root/20230624/5skE/6496b763eebac147fcfc1a4e/-473Wx593H-465559587-black-MODEL6.jpg")
+const [color, setColor] = useState("")
+const [img1, setImg1] = useState("")
+const [img2, setImg2] = useState("")
+const [img3, setImg3] = useState("")
 
 const [deleteId, setDeleteId] = useState(null)
 
@@ -30,28 +30,30 @@ function handleSubmit(e){
 
    setItem([...item, obj])
 
+   const newObj = [...item, obj]
+
    const newProduct = {
-    name, price, category, rating, detail, item
+    name, price, category, rating, detail, newObj
    }
 
    dispatch(postProduct(newProduct))
 
-//   setName("");
-//   setPrice(0);
-//   setCategory("");
-//   setRating(0);
-//   setDetail("");
-//   setColor("");
-//   setImg1("");
-//   setImg2("");
-//   setImg3("");
+  setName("");
+  setPrice(0);
+  setCategory("");
+  setRating(0);
+  setDetail("");
+  setColor("");
+  setImg1("");
+  setImg2("");
+  setImg3("");
    
 }
 
 function handleDelete(e){
     e.preventDefault()
 
-    axios.delete(`https://dressify-mock-server-final.onrender.com/products/${deleteId}`)
+    axios.delete(`https://dressify-server-project.onrender.com/products/${deleteId}`)
     .then(function(res){
         console.log(res.data);
     })
