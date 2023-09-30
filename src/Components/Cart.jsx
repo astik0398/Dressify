@@ -42,10 +42,12 @@ function Cart(){
 
 return(
     <div>
-        <h1>Your Shopping Cart</h1>
         <br/>
         <br/>
-         <h1>Your Cart={cartItem.length}</h1>
+        <h1 style={{marginLeft:"50px"}} >Your Shopping Cart</h1>
+        <br/>
+        <br/>
+         <h1 style={{marginLeft:"50px"}} >Your Cart={cartItem.length}</h1>
          <br/>
          <br/>
     { cartItem.length==0 && <h1>Your Cart Is Empty</h1> }
@@ -82,7 +84,7 @@ return(
         </tbody>
     </table>
     </div>
-    <div style={{boxShadow:" rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"}} >
+    <div style={{height:"auto",border:"1px solid red", boxShadow:" rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;"}} >
         <h1>Order Summary</h1>
         <div>
         <input placeholder="Discount Voucher" style={{width:"70%",height:"20px"}} value={discount} 
@@ -97,10 +99,13 @@ return(
         <br/>
         <h1>Total:{subTotal-discount+100}</h1>
         <br/>
-        <button style={{width:"90%",height:"30px", 
+        <button style={{width:"95%",height:"30px", 
         backgroundColor:"black",color:"white"}} >Buy This Product</button>
     </div>
 </div>
+
+<button style={{marginLeft:"30%",padding:"5px"}} >Update Card</button>
+
     </div>
 )
 }
