@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+import { Toaster } from 'react-hot-toast';
 import './App.css';
-import {Navbar}  from "./Components/Navbar";
-import {Footer}  from "./Components/Footer";
+import { Navbar } from "./Components/Navbar";
 import { MainRoutes } from "./Pages/MainRoutes";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <MainRoutes />
-      <Footer/>
+      <Toaster/>
       </div>
   );
 }
