@@ -2,8 +2,8 @@
     // max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
     display: grid;
     grid-template-columns: 68% 29%;
@@ -23,9 +23,9 @@
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border: 1px solid rgb(228, 228, 228);
         grid-template-columns: 200px 300px 60px 50px 80px 50px 150px;
         display: grid;
@@ -33,30 +33,32 @@
         opacity: 1;
         transition: height 2s, opacity 1s, padding 1s, margin 1s;
         button {
-          background-image: linear-gradient(to right, #2c2c2c 0%, #000000 51%, #212121 100%);
+          background-color: #ff7112;
           padding: 15px ;
           text-align: center;
           text-transform: uppercase;
           transition: 0.5s;
           background-size: 200% auto;
-          color: white;
+          color:white;
           box-shadow: 0 0 20px #eee;
           border-radius: 10px;
           display: block;
           border: none;
           cursor: pointer;
+           font-weight: bold;
         }
     
         button:hover {
           background-position: right center; 
-          color: #fff;
+          background-color: black;
+          color: rgb(235, 235, 235);
           text-decoration: none;
         }
   
         img {
           max-width: 100%;
-          height: 100px;
-          margin-bottom: 10px;
+          height: 200px;
+          border-radius: 4px;
         }
   
         h3 {
@@ -71,7 +73,6 @@
       }
       .cart-item.removed {
         opacity: 0;
-        //   transform: translateY(-100%);
         height: 0;
         padding: 0;
         margin: 0;
@@ -80,19 +81,16 @@
   
     .cart-total {
       width: 100%;
-    //   background-image: linear-gradient(to right, #487fed 0%,  #08255f 51%,  #256bf7 100%);
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      box-shadow: rgba(6, 24, 44, 0.1) 0px 0px 0px 1px, rgba(6, 24, 44, 0.3) 0px 4px 6px -1px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset;
       border-radius: 16px;
       bottom: 0;
-      margin-top: 20px;
       overflow: hidden;
-    //   position: fixed;
       left: 0;
       padding-top: 20px;
-      // height: 60px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      height: 267px;
+      margin-top: 176px;
   
       .total, .discount, .subtotal {
      
@@ -108,18 +106,21 @@
       }
   
       .totalpay {
-        // background-image: linear-gradient(to right, #487fed 0%,  #08255f 51%,  #256bf7 100%);
         color: black;
         padding: 10px;
        
        
       }
 
-
+    h3{
+        text-align: center;
+    }
      
     }
     .paynow{
       background-image: linear-gradient(to right, #2c2c2c 0%, #000000 51%, #212121 100%);
+      
+
         padding: 15px ;
         text-align: center;
         text-transform: uppercase;
@@ -132,6 +133,7 @@
         border: none;
         cursor: pointer;
         width: 100%;
+    
     }
   }
   

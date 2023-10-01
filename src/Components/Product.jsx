@@ -17,14 +17,14 @@ function Product() {
   );
   const [rating, setrating] = useState(searchParams.get("rating") || "");
   const [order, setorder] = useState(searchParams.get("order") || "");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handle_category = (e) => {
     const { value } = e.target;
     if (value == "all") {
       setsearchParams({});
     } else {
-      let newCategory = [];
-
+      let newCategory = category.slice(); // Create a copy of the current state
       if (newCategory.includes(value)) {
         newCategory = newCategory.filter((ele) => ele !== value);
       } else {
@@ -38,7 +38,7 @@ function Product() {
   //  sort
   const handle_sort = (e) => {
     const { value } = e.target;
-    setorder(value)
+    setorder(value);
   };
 
   //  rating
@@ -60,18 +60,18 @@ function Product() {
     }
   };
 
-  //  search 
-  const search_prod = () => {
+  //  search
 
-  }
 
   useEffect(() => {
     let params = {
       category: category,
       rating: rating,
-
     };
-order && (params.order = order)
+    order && (params.order = order);
+    if(searchQuery){
+      params.name = searchQuery;
+    }
     setsearchParams(params);
   }, [category, rating, order]);
 
@@ -82,6 +82,7 @@ order && (params.order = order)
         rating: searchParams.get("rating"),
         _sort: searchParams.get("order") && "price",
         _order: searchParams.get("order"),
+        name: searchParams.get("name"),
       },
     };
     dispatch(getProData(paramObj));
@@ -157,7 +158,7 @@ order && (params.order = order)
             <option value="5">5</option>
           </select>
           <input
-            onChange={search_prod}
+             onChange={(e) => setSearchQuery(e.target.value)}
             style={{ flexGrow: "1" }}
             className="select-common"
             type="text"
