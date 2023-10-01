@@ -2,6 +2,7 @@ import { Toaster } from 'react-hot-toast';
 import './App.css';
 import { Navbar } from "./Components/Navbar";
 import { MainRoutes } from "./Pages/MainRoutes";
+import {Footer} from "./Components/Footer"
 
 function App() {
   //Do not modify anything in this file
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <MainRoutes />
-      <Toaster/>
+      <Footer/>
       </div>
   );
 }

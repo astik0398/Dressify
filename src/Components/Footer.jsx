@@ -1,4 +1,4 @@
-
+import img from "../Images/pngegg.png"
 
 import {
   HStack,
@@ -64,24 +64,22 @@ export const Footer = () => {
 
           <Image
             _hover={{cursor:"pointer"}}
-            src={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRic3NEzq52LhkWEYfxZA6YAPTT3oYQ_6C27Q&usqp=CAU"
-            }
+            src={img}
             width={"200px"}
-            objectFit={"cover"}
+            objectFit={"cover"}  border={"none"} 
           />
         </VStack>
       </Stack>
       <Stack
-        borderTopWidth={1}
-        borderStyle={"solid"}
+        border="none"
+      
         marginTop={"10px"}
         paddingTop={"10px"}
         justifyContent="space-around"
         alignItems={{ base: "flex-start", md: "center", lg: "center" }}
         direction={{ base: "column", md: "row", lg: "row" }}
       >
-        <Text>© 2023 spendwise, All rights reserved</Text>
+        <Text>© 2023 Dressify, All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
           <FaTwitter className="footer-icon" />
           <FaYoutube className="footer-icon" />
