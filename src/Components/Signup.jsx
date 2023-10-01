@@ -81,12 +81,13 @@ export default Signup
 const DIV = styled.div`
     width: 45%;
     margin: auto;
-    margin-top: 110px;
+    margin-top: 115px;
     margin-bottom: 30px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 15px;
     display: flex;
+    margin-bottom: 160px;
     
    div{
     /* border: 2px solid blue; */

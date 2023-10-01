@@ -97,6 +97,7 @@ const DIV = styled.div`
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 15px;
     display: flex;
+    margin-bottom: 160px;
     /* border: 2px solid red; */
     
    div{
