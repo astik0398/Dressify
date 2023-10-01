@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link, useNavigate} from 'react-router-dom'
 import login_pic from '../Images/Untitled design.png'
+import toast from 'react-hot-toast'
 
 const Signin = () => {
 
@@ -16,7 +17,15 @@ const Signin = () => {
     let flag = false
 
     if(email=="" || password==""){
-      alert('PLEASE FILL DETAILS')
+      toast.error("Please Fill Your Credentials !!", {
+        style: {
+          borderRadius: "50px",
+          background: "#000428",
+          color: "#ffffff",
+          padding: "1rem 1.5rem",
+          fontWeight: "600",
+        },
+      });
       return
     }
 
@@ -29,16 +38,29 @@ const Signin = () => {
     }
 
     if(flag==true){
-      // alert('Login in success')
 
-      // setTimeout(()=> {
-        
-      // }, 1000)
+      toast.success("Login Success !", {
+        style: {
+          borderRadius: "50px",
+          background: "#000428",
+          color: "#ffffff",
+          padding: "1rem 1.5rem",
+          fontWeight: "600",
+        },
+      });
 
       navigate('/')
     }
     else{
-      alert('wrong cred !!')
+      toast.error("Incorrect Username Or Password !", {
+        style: {
+          borderRadius: "50px",
+          background: "#000428",
+          color: "#ffffff",
+          padding: "1rem 1.5rem",
+          fontWeight: "600",
+        },
+      });
     }
   }
 

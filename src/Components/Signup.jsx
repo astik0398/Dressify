@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link, useNavigate} from 'react-router-dom'
 import signuppic from '../Images/Untitled design (1).png'
+import toast from 'react-hot-toast'
 
 const Signup = () => {
 
@@ -15,7 +16,15 @@ const Signup = () => {
 
   function handleClick(){
     if(name=="" || email=="" || password==""){
-      alert('Please fill details')
+      toast.error("Please Fill Below Details !!", {
+        style: {
+          borderRadius: "50px",
+          background: "#000428",
+          color: "#ffffff",
+          padding: "1rem 1.5rem",
+          fontWeight: "600",
+        },
+      });
     }
 
     else{
@@ -28,7 +37,15 @@ const Signup = () => {
       signup_ls.push(cred)
       localStorage.setItem('credentials', JSON.stringify(signup_ls))
 
-      alert('SIGN UP SUCCESS !!')
+      toast.success("Signup Successful !!", {
+        style: {
+          borderRadius: "50px",
+          background: "#000428",
+          color: "#ffffff",
+          padding: "1rem 1.5rem",
+          fontWeight: "600",
+        },
+      });
       
       setTimeout(()=> {
         navigate('/signin')
@@ -44,9 +61,9 @@ const Signup = () => {
       </div>
         <div style={{padding:'35px', borderTopRightRadius: '15px', borderBottomRightRadius:'15px', backgroundColor: '#ff4133', width:'450px'}}>
         <h1 style={{ fontSize: "40px", color: "#ffffff" }}>Hey There !</h1>
-        <input onChange={(e)=> setName(e.target.value)} type="text" placeholder='Enter Your Name                                         @' />
-        <input onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Enter Your Email                                          ✉' />
-        <input onChange={(e)=> setPassword(e.target.value)} type="password" placeholder='Enter Your Password                                    ꗃ' />
+        <input onChange={(e)=> setName(e.target.value)} type="text" placeholder='Enter Your Name                                            @' />
+        <input onChange={(e)=> setEmail(e.target.value)} type="text" placeholder='Enter Your Email                                             ✉' />
+        <input onChange={(e)=> setPassword(e.target.value)} type="password" placeholder='Enter Your Password                                       ꗃ' />
         <button onClick={handleClick}>Sign Up</button>
         <p style={{color: 'white'}}>
         Already have an account?{" "}
