@@ -3,7 +3,13 @@ import {Box, Card,CardBody,Stack,Divider,CardFooter,ButtonGroup,
    Image,Button, Grid,GridItem,Heading,Text} from "@chakra-ui/react"
 import img from "../Images/dom-hill-nimElTcTNyY-unsplash__1_-imageonline.co-merged-removebg-preview (1).png"
 import img2 from "../Images/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall.jpg"
+import { useSelector } from "react-redux";
 export const Homepage = () => {
+
+  const isAuth = useSelector(store=> store.authReducer.isAuth)
+  const username = useSelector(store=> store.authReducer.username)
+  console.log(isAuth);
+  console.log(username);
  
    let bg="#ff7112"
   return (

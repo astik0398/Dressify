@@ -3,14 +3,25 @@ import styled from 'styled-components'
 import {Link, useNavigate} from 'react-router-dom'
 import login_pic from '../Images/Untitled design.png'
 import toast from 'react-hot-toast'
+import { useDispatch, useSelector } from 'react-redux'
+import { LOGIN_SUCCESS } from '../Redux/AuthReducer/actionType'
+import { login } from '../Redux/AuthReducer/action'
 
 const Signin = () => {
 
-  const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
+  // const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+
   const navigate = useNavigate()
+  const signup_ls = useSelector(store=> store.authReducer.credentials)
+  const dispatch = useDispatch()
+
+  const isAuth = useSelector(store=> store.authReducer.isAuth)
+  const username = useSelector(store=> store.authReducer.username)
+  console.log(isAuth);
+  console.log(username);
 
   function handleClick(){
 
@@ -33,6 +44,7 @@ const Signin = () => {
       signup_ls.map((item)=> {
         if(item.email == email && item.password == password){
           flag = true
+          dispatch(login(item.name))
         }
       })
     }

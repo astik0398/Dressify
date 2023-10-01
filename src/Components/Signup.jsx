@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import {Link, useNavigate} from 'react-router-dom'
 import signuppic from '../Images/Untitled design (1).png'
 import toast from 'react-hot-toast'
+import { useDispatch, useSelector } from 'react-redux'
+import { signup } from '../Redux/AuthReducer/action'
 
 const Signup = () => {
 
@@ -12,11 +14,13 @@ const Signup = () => {
 
   const navigate = useNavigate()
 
-  const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
+  const dispatch = useDispatch()
+
+  // const signup_ls = JSON.parse(localStorage.getItem('credentials')) || []
 
   function handleClick(){
     if(name=="" || email=="" || password==""){
-      toast.error("Please Fill Below Details !!", {
+      toast.error("Please Fill All Details !", {
         style: {
           borderRadius: "50px",
           background: "#000428",
@@ -27,17 +31,16 @@ const Signup = () => {
       });
     }
 
-    else{
-      let cred = {
-        name,
-        email,
-        password
-      }
+   else{
+    let details = {
+      name,
+      email,
+      password
+    }
 
-      signup_ls.push(cred)
-      localStorage.setItem('credentials', JSON.stringify(signup_ls))
+    dispatch(signup(details))
 
-      toast.success("Signup Successful !!", {
+        toast.success("Signup Successful !!", {
         style: {
           borderRadius: "50px",
           background: "#000428",
@@ -46,13 +49,17 @@ const Signup = () => {
           fontWeight: "600",
         },
       });
-      
-      setTimeout(()=> {
+
+          setTimeout(()=> {
         navigate('/signin')
       }, 1000)
+
+   }
+      
     }
+
     
-  }
+    
 
   return (
     <DIV>

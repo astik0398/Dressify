@@ -2,12 +2,19 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Hamburger } from '../../src/Images/icons8-menu.svg'
 import  img  from '../../src/Images/Dressify__1_-removebg-preview (1).png'
+import { useDispatch, useSelector } from 'react-redux'
+import { Avatar } from '@chakra-ui/avatar'
+import { logout } from '../Redux/AuthReducer/action'
+import { Button } from '@chakra-ui/button'
 // import './navbar.css'
 
 export const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = useState(false)
-  
+  const isAuth = useSelector(store=> store.authReducer.isAuth)
+  const username = useSelector(store=> store.authReducer.username)
+
+  const dispatch = useDispatch()
 
   return (
     <nav className="navbar">
@@ -46,10 +53,15 @@ export const Navbar = () => {
         </div>
           <div   style={{width:"20%",display:"flex" ,flexDirection:'row',
           justifyContent:"space-evenly",alignItems:"center"}}>
+
+            {/* <h3>{username}</h3> */}
+            {isAuth ? <Avatar bg={'orange'} textColor={'white'} padding={'8px'} name={username} border={'1px solid white'} borderRadius={'100%'}/>: null}
           
-      <NavLink  to={"/signin"}> <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
-            fontSize:"14px",  background:"black", color:"white" ,padding:"5px 30px"}} >
-              Login</button></NavLink>
+      {isAuth ? (<NavLink  to={"/signin"}> <button onClick={()=> dispatch(logout)} style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
+            fontSize:"14px",  background:"green", color:"white" ,padding:"5px 30px"}} >
+              Log out</button></NavLink>) : (<NavLink  to={"/signin"}> <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
+            fontSize:"14px",  background:"red", color:"white" ,padding:"5px 30px"}} >
+              Log in</button></NavLink>)}
 
 <NavLink to={"/cart"}>
   
@@ -61,7 +73,6 @@ export const Navbar = () => {
           </div>
       
       </div>
-     
     </nav>
   )
 }
