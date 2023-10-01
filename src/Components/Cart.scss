@@ -86,11 +86,11 @@
       bottom: 0;
       overflow: hidden;
       left: 0;
-      padding-top: 20px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      height: 267px;
-      margin-top: 176px;
+      height: max-content;
+      margin-top: 10px;
   
       .total, .discount, .subtotal {
      
@@ -133,6 +133,7 @@
         border: none;
         cursor: pointer;
         width: 100%;
+        margin-top: 20px;
     
     }
   }

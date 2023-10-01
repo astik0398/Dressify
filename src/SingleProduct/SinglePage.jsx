@@ -11,6 +11,13 @@ export const SinglePage = () => {
 
     const prod = useSelector((store) => store.ProductReducer.products);
     const [singleData, setSingleData] = useState({});
+    const [images, setimages] = useState({
+      img1: "",
+      img2: "",
+      img3: "",
+      img4: ""
+    })
+
     //  cart
     const [cart, setCart] = useState([]);
   const [cartLength, setCartLength] = useState(0);
@@ -22,7 +29,15 @@ export const SinglePage = () => {
       const prodata = prod.find((item) => item.id === +id)
       console.log(prodata)
       prodata && setSingleData(prodata)
+      prodata && prodata && prodata.item && setimages(prodata.item[0])
     }, []);
+
+    const changeImage = (i) => {
+      // console.log(i)
+       if( singleData && singleData && singleData.item && singleData.item[i]){
+        setimages(singleData.item[i])
+       }
+    }
 
     // add to local storage for cart item-----
 
@@ -73,15 +88,6 @@ export const SinglePage = () => {
           }
         }  
     };
-    
-
-    let obj = {
-        img1: "https://static.zara.net/photos///2022/I/0/1/p/8779/400/712/2/w/750/8779400712_2_1_1.jpg?ts=1657273842773",
-        img2: "https://static.zara.net/photos///2022/I/0/1/p/8779/400/712/2/w/750/8779400712_2_2_1.jpg?ts=1657273824889",
-        img3: "https://static.zara.net/photos///2022/I/0/1/p/3046/173/800/12/w/750/3046173800_2_3_1.jpg?ts=1666021153970",
-        img4: "https://static.zara.net/photos///2022/I/0/1/p/8779/400/712/2/w/750/8779400712_6_2_1.jpg?ts=1657280282729",
-      };
-
 
     const [active, setActive] = useState(2);
     const styles = { gridColumn: "1/4", gridRow: "1/4" };
@@ -97,6 +103,9 @@ export const SinglePage = () => {
 
 
 
+
+
+
     //  cart
     useEffect(() => {
         const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -105,20 +114,20 @@ export const SinglePage = () => {
       }, []);
 
   return (
-    <div className='single-wrapper'>  
+    <div className='single-wrapper' style={{minHeight: "100vh"}}>  
         <div
         className="all-img">
             <div style={active == 1 ? styles : {}} onClick={() => handleClick(1)}>
-                <img src={obj.img1} alt="" />
+                <img src={images.img1 ? images.img1 : ""} alt="" />
             </div>
             <div style={active == 2 ? styles : {}} onClick={() => handleClick(2)}>
-                <img src={obj.img2} alt="" />
+                <img src={images.img2 ? images.img2 : ""} alt="" />
             </div>
             <div style={active == 3 ? styles : {}} onClick={() => handleClick(3)}>
-                <img src={obj.img3} alt="" />
+                <img src={images.img3 ? images.img3 : ""} alt="" />
             </div>
             <div style={active == 4 ? styles : {}} onClick={() => handleClick(4)}>
-                <img src={obj.img4} alt="" />
+                <img src={images.img4 ? images.img4 : ""} alt="" />
             </div>
         </div>
 
@@ -127,7 +136,7 @@ export const SinglePage = () => {
             <br />
             <p>{singleData.detail}</p>
             <br />
-            <h3>Rating</h3>
+            <h3>Rating :  {singleData.rating == 1 ? "⭐" : singleData.rating == 2 ? "⭐⭐" : singleData.rating == 3 ? "⭐⭐⭐" : singleData.rating == 4 ? "⭐⭐⭐⭐" : "⭐⭐⭐⭐⭐"}</h3>
             <br />
             <h3 className='price'>₹{singleData.price}</h3>
             <br />
@@ -143,15 +152,16 @@ export const SinglePage = () => {
                 </div>
             </div>
             <br />
-            <div>
+            {singleData?.item?.length > 1 &&             <div>
                 <h3>Colors Available</h3>
                 <br />
                 <div className='button'>
-                    {singleData.item?.map((el) => (
-                        <button className='color-button' style={{background: el.color}}></button>
+                    {singleData.item?.map((el , i) => (
+                        <button className='color-button' onClick={()=>changeImage(i)} style={{background: el.color}}></button>
                     ))}
                 </div>
-            </div>
+            </div>}
+
             <br />
             <div>
                 <button className='buy-button'

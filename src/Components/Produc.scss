@@ -176,11 +176,65 @@
     text-decoration: none;
   }
 }
+.rating-btn{
+  position: relative;
+  min-width: 158px;
+  background-image: linear-gradient(to right, #3b3838 15%, #252424 28%, #3d3a3a 100%);
+  padding: 15px 45px;
+  // text-align: center;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  text-transform: uppercase;
+  color: rgb(219, 219, 219);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+  // width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  flex-grow: 1;
+
+  .rating{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    text-align: left;
+    background: rgb(21, 21, 21);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    
+    div{
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    
+  }
+  &:hover {
+    .rating{
+
+      display: block;
+    }
+  }
+}
 
 .all-img{
   img{
     width: 100%;
   }
+}
+@media screen and (max-width: 900px) {
+
+  #cars-data.cars-data {
+    grid-template-columns: repeat(3, 30%);
+  }
+
 }
 @media screen and (max-width: 601px) {
   #cars-data.cars-data {
@@ -188,10 +242,4 @@
   }
 }
 
-//   @media screen and (max-width: 900px) {
 
-//        #cars-data.cars-data {
-//         grid-template-columns: 40% 40%
-//       }
-
-//   }
