@@ -1,51 +1,67 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Hamburger } from '../../src/images/icons8-menu.svg'
-import  img  from '../../src/images/Dressify (1).png'
-import './navbar.css'
+import { ReactComponent as Hamburger } from '../../src/Images/icons8-menu.svg'
+import  img  from '../../src/Images/Dressify__1_-removebg-preview (1).png'
+// import './navbar.css'
 
 export const Navbar = () => {
 
-  const [showNavbar, setShowNavbar] = useState(fal
+  const [showNavbar, setShowNavbar] = useState(false)
   
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <div className="logo"   style={{width:"30px",}}  >
-          <img src={img} alt="" />
+      <div className="container" style={{width:"100%" ,display:"flex" 
+      , justifyContent:"space-around",alignItems:"center"}}>
+        <div className="logo"  style={{width:"20%",display:"flex" ,flexDirection:'row',
+          justifyContent:"center",alignItems:"center"}}>
+          <img  style={{width:"100px",paddingTop:"10px"}}  src={img} alt=""  />
         </div>
    
-        <div
-         className={`nav-elements  ${showNavbar && 'active'}`}>
-          <ul>
+        <div  style={{width:"50%"}}
+          >
+          <ul style={{display:"flex" ,flexDirection:'row',
+          justifyContent:"space-evenly",alignItems:"center"}}>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
+            fontSize:"16px", fontWeight:"700" , color:"black"}} to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
+            fontSize:"16px", fontWeight:"700" , color:"black"}} to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/collection">Collection</NavLink>
-            </li>
-              <NavLink to="/blog">Blog</NavLink>
-            <li>
+              <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
+            fontSize:"16px", fontWeight:"700" , color:"black"}} to={"/products"}>Product</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
+            fontSize:"16px", fontWeight:"700" , color:"black"}} to="/blog">Blog</NavLink>
+            </li>
+            <li>
+              <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
+            fontSize:"16px", fontWeight:"700" , color:"black"}} to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
-      </div>
-          <DIV>
-      
-      <Link to={"/"}>Home</Link>
-      <Link to={"/products"}>Product</Link>
-      <Link to={"/signin"}>Login</Link>
+          <div   style={{width:"20%",display:"flex" ,flexDirection:'row',
+          justifyContent:"space-evenly",alignItems:"center"}}>
+          
+      <NavLink  to={"/signin"}> <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
+            fontSize:"14px",  background:"black", color:"white" ,padding:"5px 30px"}} >
+              Login</button></NavLink>
 
-       <Link to={"/cart"}>Cart</Link>
-       <Link to={"/single/:id"}>SinglePage</Link>
-    </DIV>
+<NavLink to={"/cart"}>
+  
+       <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
+            fontSize:"14px",  background:"black", color:"white" ,padding:"5px 30px"}} >
+              Cart</button>
+</NavLink>
+       {/* <Link to={"/single/:id"}>SinglePage</Link> */}
+          </div>
+      
+      </div>
+     
     </nav>
   )
 }
