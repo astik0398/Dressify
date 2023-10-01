@@ -5,9 +5,9 @@ import  img  from '../../src/images/Dressify (1).png'
 import './navbar.css'
 
 export const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
 
-
+  const [showNavbar, setShowNavbar] = useState(fal
+  
 
   return (
     <nav className="navbar">
@@ -37,6 +37,15 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
+          <DIV>
+      
+      <Link to={"/"}>Home</Link>
+      <Link to={"/products"}>Product</Link>
+      <Link to={"/signin"}>Login</Link>
+
+       <Link to={"/cart"}>Cart</Link>
+       <Link to={"/single/:id"}>SinglePage</Link>
+    </DIV>
     </nav>
   )
 }

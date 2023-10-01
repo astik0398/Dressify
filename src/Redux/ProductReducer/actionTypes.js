@@ -1,0 +1,11 @@
+
+
+export const PROD_RQUEST = "PROD_RQUEST"
+export const PROD_FAILURE = "PROD_FAILURE"
+
+export const PROD_SUCCESS = "PROD_SUCCESS"
+
+
+// POST PRODUCT
+
+export const POST_PRODUCT_SUCCESS = "POST_PRODUCT_SUCCESS"
