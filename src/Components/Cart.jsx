@@ -76,19 +76,19 @@ function Cart() {
       <div className="cart-total">
         <h3>Order Summary</h3>
         <div className="totalpay">
-       <div className="total">
-       <p> Total: </p>
-            <p>₹ {getTotalPrice().toFixed(2)}</p>
-       </div>
-          <div className="discount">
-          <p>Discount</p>
-          <p>₹ 99.00</p>
+          <div className="total">
+            <p> Total: </p>
+            <p>₹{getTotalPrice().toFixed(2)}</p>
           </div>
-        <div className="subtotal">
-        <p>Sub Total:</p>
-          <p>₹ {getTotalPrice().toFixed(2)}</p>
-        </div>
-        <button className="paynow">Pay Now</button>
+          <div className="discount">
+            <p>Discount</p>
+            <p>₹99.00</p>
+          </div>
+          <div className="subtotal">
+            <p>Sub Total</p>
+            <p>₹{(getTotalPrice() - 99).toFixed(2)}</p>
+          </div>
+          <button className="paynow">Pay Now</button>
         </div>
       </div>
     </div>
