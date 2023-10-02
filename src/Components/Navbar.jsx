@@ -65,9 +65,9 @@ export const Navbar = () => {
 
 <NavLink to={"/cart"}>
   
-       <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
+       {isAuth && <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
             fontSize:"14px",  background:"black", color:"white" ,padding:"5px 30px"}} >
-              Cart</button>
+              Cart</button>}
 </NavLink>
        {/* <Link to={"/single/:id"}>SinglePage</Link> */}
           </div>
