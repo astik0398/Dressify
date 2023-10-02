@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# DRESSIFY WEBSITE:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Dressify, your one-stop destination for fashionable clothing and accessories for men, women, and children. This README file will guide you through the essential information you need to know about Dressify, its features, and how to get started.
 
-## Available Scripts
+# Table Of Content
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+  - [Signing Up](#sign-up)
+  - [Signing In](#sign-in)
+- [Exploring Our Services](#exploring-our-services)
+  - [Products Page](#products-page)
+  - [Single Product Page](#single-product-page) 
+- [Ordering Products](#ordering-products)
+  - [Cart Page](#cart-page)
+- [Contact](#contact)
 
-### `npm start`
+# Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After visiting our website you'll be landing on our Homepage where you can see the offers that are currently available on our website. You can also see few products on the homepage which is our top picks. If you wish to go through the official details of our website then simply scroll down to the button of the page. In the footer section you will be able to see all the official details of our website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sign Up
+If you're new to our platform, the first step is to create an account. Follow these simple steps:
+* Click on log in button present at the top right corner.
+* After that click on Sign up link which will be present just below sign in button.
+* Fill in your personal details, including your name, email address and a secure password.
+* Click the Sign Up button to successfuly create your account.
+* Congratulations! You're now a member of our Dressify website. After that you will be redirected to login page where you have to enter your details.
 
-### `npm test`
+### Sign In
+For returning users, logging in is a breeze:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Click on the Log In button on the top right corner of the naigation menu.
+* Enter your registered email address and password.
+* Click the Log In button to access your account.
 
-### `npm run build`
+## Exploring Our Services
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Products Page
+Our platform features a dedicated page listing all the products that are available on our website. Here, you can browse through the various products of all the categories. To access this page you just need to click on the Product link which is present in the navigation menu.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Single Product Page
+If you're interested in a specific product and want to get more information about them, our Single Product Page provides comprehensive information about each product. To access a single product's page just visit the Products page and from there simply click on the image of the product which you wish to see.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Ordering Products
 
-### `npm run eject`
+### Cart Page
+If you wish order any product then simply visit the specific product which you wish to order and then click on "Add Item To Cart". After that your product will be added to the cart. To pay for your order simply click on cart page and from there you can set the quantity you wish to order and then click on Pay Now button. (** NOTE: CART BUTTON WILL ONLY BE VISIBLE IF YOU ARE LOGGED IN**)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+If, at any point you face any difficulty while going through our website feel free to reach out to us. Our team will be more than happy to help you.
