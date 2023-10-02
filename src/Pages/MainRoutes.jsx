@@ -7,6 +7,7 @@ import Signup from "../Components/Signup";
 import Admin from "../Components/Admin";
 import Cart from "../Components/Cart";
 import { SingleProductPage } from "./SingleProductPage";
+
 export const MainRoutes = () => {
   return (
     <>
