@@ -26,6 +26,7 @@ function Product() {
   const [order, setorder] = useState(searchParams.get("order") || "");
 
   const [searchval, setsearchval] = useState("")
+  const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
 
   const handle_category = (e) => {
     const { value } = e.target;
@@ -70,6 +71,17 @@ function Product() {
     setsearchval(e.target.value)
   };
 
+  // pagination
+  const prev_btn = () => {
+    if (page > 1) {
+      setPage((prev) => prev - 1);
+    }
+  };
+
+  const next_btn = () => {
+    setPage((next) => next + 1);
+  };
+
   const search_prod = () => {
    console.log(searchval)
    fetchdata()
@@ -79,6 +91,7 @@ function Product() {
     let params = {
       category: category,
       rating: rating,
+      page: page,
     };
     searchval.length > 0 && (params.q = searchval);
     order && (params.order = order);
@@ -88,7 +101,7 @@ function Product() {
 
   useEffect(() => {
     fetchdata()
-  }, [category, order, rating]);
+  }, [category, order, rating, page]);
 
   const paramObj = {
     params: {
@@ -97,6 +110,8 @@ function Product() {
       _sort: searchParams.get("order") && "price",
       _order: searchParams.get("order"),
       q: searchParams.get("q"),
+      _page : Number(searchParams.get("page")),
+      _limit : 15
     },
   };
 
@@ -121,19 +136,7 @@ function Product() {
         <div style={{ padding: "0 30px" }}>
           <h1>BIGGEST DEALS ON TOP BRANDS</h1>
         </div>
-        <div
-          style={{
-            display: "flex",
-            gap: "10px",
-            width: "100%",
-            padding: "10px 30px",
-            position: "sticky",
-            top: "0",
-            zIndex: "1",
-            background: "white",
-            flexWrap: "wrap",
-          }}
-        >
+        <div id="abcd" className="respon_div">
           <select
             onChange={handle_category}
             className="select-common"
@@ -226,11 +229,20 @@ function Product() {
             type="text"
             placeholder="Enter Product name"
           />
-          <button onClick={search_prod} className="select-common">
+          <button id="serc_bt_res" onClick={search_prod} className="select-common">
             Search
           </button>
         </div>
         <ProductCard />
+       
+      <div className="pagination">
+
+       
+          <button onClick={() => prev_btn()} >PREV</button>
+             <p>{page}</p>
+          <button onClick={() => next_btn()} >NEXT</button>
+      
+      </div>
       </div>
     </div>
   );

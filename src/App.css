@@ -8,3 +8,25 @@
 body{
   background-color: rgb(245, 242, 242);
 }
+
+@media screen and (max-width: 601px) {
+  
+  .cont-home-box{
+    grid-template-columns: 100% !important;
+    height: max-content !important;
+    position: relative;
+  }
+  .ccc{
+    flex-direction: column !important;
+  }
+  .home-head-ing{
+    font-size: 40px !important;
+  }
+  .head-img{
+    display: none !important;
+  }
+  .hhhhh{
+    display: none !important;
+  }
+
+}

@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Avatar } from '@chakra-ui/avatar'
 import { logout } from '../Redux/AuthReducer/action'
 import { Button } from '@chakra-ui/button'
-// import './navbar.css'
+import './navbar.scss'
 
 export const Navbar = () => {
 
@@ -24,11 +24,12 @@ export const Navbar = () => {
           justifyContent:"center",alignItems:"center"}}>
           <img  style={{width:"100px",paddingTop:"10px"}}  src={img} alt=""  />
         </div>
+
    
-        <div  style={{width:"50%"}}
+        <div className='nav-menu'
           >
-          <ul style={{display:"flex" ,flexDirection:'row',
-          justifyContent:"space-evenly",alignItems:"center"}}>
+        <button className='open'>Menu</button>
+          <ul>
             <li>
               <NavLink style={{textDecoration:"none",fontFamily:"sans-serif",
             fontSize:"16px", fontWeight:"700" , color:"black"}} to="/">Home</NavLink>
@@ -52,21 +53,21 @@ export const Navbar = () => {
           </ul>
         </div>
           <div   style={{width:"20%",display:"flex" ,flexDirection:'row',
-          justifyContent:"space-evenly",alignItems:"center"}}>
+          justifyContent:"space-evenly",alignItems:"center"}} className='hhhhh'>
 
             {/* <h3>{username}</h3> */}
-            {isAuth ? <Avatar bg={'orange'} textColor={'white'} padding={'8px'} name={username} border={'1px solid white'} borderRadius={'100%'}/>: null}
+            {isAuth ? <Avatar bg={'#13162f'} textColor={'white'} padding={'8px'} name={username} border={'1px solid white'} borderRadius={'100%'}/>: null}
           
-      {isAuth ? (<NavLink  to={"/signin"}> <button onClick={()=> dispatch(logout)} style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
-            fontSize:"14px",  background:"green", color:"white" ,padding:"5px 30px"}} >
-              Log out</button></NavLink>) : (<NavLink  to={"/signin"}> <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
-            fontSize:"14px",  background:"red", color:"white" ,padding:"5px 30px"}} >
+      {isAuth ? (<NavLink  to={"/signin"}> <button onClick={()=> dispatch(logout)} style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"12px",
+            fontSize:"14px",  background:"green", color:"white" ,padding:"12px 30px"}} >
+              Log out</button></NavLink>) : (<NavLink  to={"/signin"}> <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"4px",
+            fontSize:"14px",  background:"#3b3838", color:"white" ,padding:"12px 30px" , width:"100px"}} >
               Log in</button></NavLink>)}
 
 <NavLink to={"/cart"}>
   
-       {isAuth && <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"20px",
-            fontSize:"14px",  background:"black", color:"white" ,padding:"5px 30px"}} >
+       {isAuth && <button style={{textDecoration:"none",fontFamily:"sans-serif",border:"none",borderRadius:"10px",
+            fontSize:"14px",  background:"#ff7112", color:"white" ,padding:"12px 30px" }} >
               Cart</button>}
 </NavLink>
        {/* <Link to={"/single/:id"}>SinglePage</Link> */}

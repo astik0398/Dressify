@@ -23,7 +23,7 @@ export const Homepage = () => {
        <Box paddingLeft="30px" justifyContent="space-evenly"  alignItems="center">
        <Text  color="white" fontSize="20px"   fontStyle="600" textAlign="start" >TRANDY FASHION ZONE</Text>
     <Heading color="white"  fontFamily="sans-serif" w="90%" lineHeight="70px"  textAlign="start" 
-    fontSize="62px"  marginTop="20px">WE * ALWAYS BUILD STUNNING FASHION EXPERIENCES</Heading>
+    fontSize="62px"  marginTop="20px" className="home-head-ing">WE * ALWAYS BUILD STUNNING FASHION EXPERIENCES</Heading>
   <Box  textAlign="start" marginTop="20px"> 
 
       <Button border ="none" borderRadius="50Px" bg="black" 
@@ -35,7 +35,7 @@ export const Homepage = () => {
   </GridItem>
   <GridItem w='100%' h='80vh' >
 
-    <Image w="80%" src={img}  display="flex"  margin=" auto"  justifyContent="center" alignItems="center"></Image>
+    <Image w="80%" src={img}  display="flex"  margin=" auto"  justifyContent="center" alignItems="center" className="head-img"></Image>
   </GridItem>
 </Grid>
 <Grid maxW="95%"  margin=" 10px auto" height="100%"
@@ -54,7 +54,7 @@ export const Homepage = () => {
   {/* map  */}
 
   <Grid maxW="95%" margin={'auto'} marginTop={'-70px'} marginBottom={'50px'} height="70vh"
- templateColumns='repeat(4, 1fr)'  columnGap="20"
+ templateColumns='repeat(4, 1fr)'  columnGap="20" className="cont-home-box"
 >
 
 
@@ -66,7 +66,7 @@ export const Homepage = () => {
     
     <Image 
    src="https://static.zara.net/photos///2022/I/0/1/p/8779/400/712/2/w/750/8779400712_2_1_1.jpg?ts=1657273842773"  alt='Green double couch with wooden legs'
-      w="100%"  h="50vh" 
+      w="100%"  h="50vh" objectFit={"cover"}
     />
   </Box>
   <Stack mt='6' spacing='3' p="0px 10px">
@@ -91,7 +91,7 @@ export const Homepage = () => {
     <Image 
    src="https://static.zara.net/photos///2022/I/0/2/p/1732/401/515/2/w/750/1732401515_2_1_1.jpg?ts=1668766713593"  alt='Green double couch with wooden legs'
       borderRadius='lg'
-      w="100%"  h="50vh"
+      w="100%"  h="50vh" objectFit={"cover"}
     />
   </Box>
   <Stack mt='6' spacing='3' p="0px 10px">
@@ -116,7 +116,7 @@ export const Homepage = () => {
     <Image 
    src="https://static.zara.net/photos///2023/V/0/3/p/3643/762/427/302/w/750/3643762427_1_1_1.jpg?ts=1670924429768"  alt='Green double couch with wooden legs'
       borderRadius='lg'
-      w="100%"  h="50vh"
+      w="100%"  h="50vh" objectFit={"cover"}
     />
   </Box>
   <Stack mt='6' spacing='3' p="0px 10px">
@@ -141,7 +141,7 @@ export const Homepage = () => {
     <Image 
    src="https://images.unsplash.com/photo-1621788455628-957e51d2f4e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"  alt='Green double couch with wooden legs'
       borderRadius='lg'
-      w="100%"  h="50vh" 
+      w="100%"  h="50vh"  objectFit={"cover"}
     />
   </Box>
     <Stack mt='6' spacing='3' p="0px 10px">

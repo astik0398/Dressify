@@ -1,15 +1,13 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
-  
 }
 
 #cars-data.cars-data {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(5 , 19%);
+  grid-template-columns: repeat(5, 19%);
   gap: 10px;
   .img {
     position: relative;
@@ -19,16 +17,15 @@
       width: 100%;
       transition: transform 0.5;
       border-radius: 16px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 0px 0px;
-    height: 100%;
-
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 0px 0px;
+      height: 100%;
     }
 
     &:hover {
       transform: scale(1.03);
     }
   }
-  p{
+  p {
     // background-color: red;
     border-radius: 50%;
     // border: 1px solid black;
@@ -74,14 +71,13 @@
       flex-direction: column;
       gap: 5px;
       padding: 5px;
-      strong{
+      strong {
         color: rgb(228, 126, 0);
       }
-      .name{
+      .name {
         width: calc(100% - 40px);
       }
     }
-
 
     .details-data {
       display: flex;
@@ -100,7 +96,18 @@
       }
     }
   }
- 
+}
+
+.respon_div {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex-wrap: wrap;
+  background: white;
 }
 
 .loader-container {
@@ -140,7 +147,12 @@
   color: #333;
 }
 .select-common {
-  background-image: linear-gradient(to right, #3b3838 15%, #252424 28%, #3d3a3a 100%);
+  background-image: linear-gradient(
+    to right,
+    #3b3838 15%,
+    #252424 28%,
+    #3d3a3a 100%
+  );
   padding: 15px 45px;
   // text-align: center;
   border: none;
@@ -157,14 +169,16 @@
   // width: 100%;
   font-weight: 600;
   font-size: 16px;
-  *{
+  * {
     background: rgb(21, 21, 21);
     border: none;
-    padding: 10px;
+    // padding: 10px;
+    font-size: 12px;
+    max-width: 30px;
     border-radius: 16px;
   }
 
-  &::placeholder{
+  &::placeholder {
     color: rgb(154, 154, 154);
     font-weight: 400;
     text-transform: capitalize;
@@ -176,10 +190,15 @@
     text-decoration: none;
   }
 }
-.rating-btn{
+.rating-btn {
   position: relative;
   min-width: 158px;
-  background-image: linear-gradient(to right, #3b3838 15%, #252424 28%, #3d3a3a 100%);
+  background-image: linear-gradient(
+    to right,
+    #3b3838 15%,
+    #252424 28%,
+    #3d3a3a 100%
+  );
   padding: 15px 45px;
   // text-align: center;
   border: none;
@@ -197,7 +216,7 @@
   font-size: 16px;
   flex-grow: 1;
 
-  .rating{
+  .rating {
     position: absolute;
     width: 100%;
     left: 0;
@@ -208,38 +227,110 @@
     padding: 10px;
     border-radius: 4px;
     display: none;
-    
-    div{
+
+    div {
       display: flex;
       gap: 10px;
       margin: 10px 0;
     }
-    
   }
   &:hover {
-    .rating{
-
+    .rating {
       display: block;
     }
   }
 }
 
-.all-img{
-  img{
+.all-img {
+  img {
     width: 100%;
   }
 }
-@media screen and (max-width: 900px) {
 
+
+.pagination{
+// border: 1px solid red;
+width: 400px;
+margin: auto;
+display: flex;
+gap: 30px;
+justify-content: center;
+align-items: center;
+padding: 10px ;
+
+  button{
+    padding: 5px 10px;
+    background-color: rgb(232, 138, 122);
+    border-radius: 4px;
+    // margin: 10px 10px;
+  }
+  
+
+}
+
+
+
+@media screen and (max-width: 900px) {
   #cars-data.cars-data {
     grid-template-columns: repeat(3, 30%);
   }
 
+  .Prod_contain h1 {
+    text-align: center;
+    // margin-bottom: 25px;
+    // font-size: 27px;
+  }
 }
+
 @media screen and (max-width: 601px) {
   #cars-data.cars-data {
     grid-template-columns: repeat(1, 1fr);
   }
+  .respon_div{
+    position: relative;
+  }
+
+  .Prod_contain h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 27px;
+  }
+
+  #cars-data.cars-data .img img {
+    width: 100%;
+    transition: transform 0.5;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 0px 0px;
+    height: 100%;
+  }
+  #cars-data.cars-data .card .top-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 9px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -30px;
+  }
+  // .rating-btn{
+  // display: none;
+  // }
+  #cars-data.cars-data p {
+    display: none;
+  }
+
+  #cars-data.cars-data .card .title .name span {
+    max-width: none;
+  }
+
+  .respon_div select {
+    width: 100%;
+  }
+
+
+  #serc_bt_res {
+    margin: auto;
+  }
 }
-
-
