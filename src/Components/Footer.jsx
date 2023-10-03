@@ -22,6 +22,7 @@ export const Footer = () => {
         direction={{ base: "column", md: "row", lg: "row" }}
         justifyContent={"space-around"}
         alignItems={"flex-start"}
+        className="ccc"
       >
         <VStack alignItems={"flex-start"}>
           <Heading as={"h3"} size={"md"}>

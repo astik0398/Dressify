@@ -67,6 +67,7 @@ function ColourComp({item}) {
       </div>
       <div>{/* <button className="addtocart">Add to Cart</button> */}</div>
     </div>
+     
   );
 }
 
